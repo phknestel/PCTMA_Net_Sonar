@@ -12,35 +12,34 @@ def get_centroid(file_path, dataset_key):
             return np.mean(point_cloud, axis=0)
     return None
 
+def process_pair(gt_file_path, generated_file_path, dataset_key):
+    reference_centroid = get_centroid(gt_file_path, dataset_key)
+    if reference_centroid is not None:
+        # Process ground truth file
+        with h5py.File(gt_file_path, 'r+') as file:
+            if dataset_key in file:
+                point_cloud = file[dataset_key][:]
+                centered_point_cloud = center_point_cloud(point_cloud, reference_centroid)
+                del file[dataset_key]
+                file.create_dataset(dataset_key, data=centered_point_cloud)
+                print(f"Processed ground truth {os.path.basename(gt_file_path)}")
+
+        # Process corresponding generated data file
+        with h5py.File(generated_file_path, 'r+') as file:
+            if dataset_key in file:
+                point_cloud = file[dataset_key][:]
+                centered_point_cloud = center_point_cloud(point_cloud, reference_centroid)
+                del file[dataset_key]
+                file.create_dataset(dataset_key, data=centered_point_cloud)
+                print(f"Processed generated data {os.path.basename(generated_file_path)}")
+
 def process_directory(ground_truth_dir, generated_data_dir, dataset_key):
-    # Get the centroid of the ground truth
-    ground_truth_files = [f for f in os.listdir(ground_truth_dir) if f.endswith(".h5")]
-    if ground_truth_files:
-        reference_centroid = get_centroid(os.path.join(ground_truth_dir, ground_truth_files[0]), dataset_key)
-
-        if reference_centroid is not None:
-            # Process ground truth directory
-            for filename in ground_truth_files:
-                file_path = os.path.join(ground_truth_dir, filename)
-                with h5py.File(file_path, 'r+') as file:
-                    if dataset_key in file:
-                        point_cloud = file[dataset_key][:]
-                        centered_point_cloud = center_point_cloud(point_cloud, reference_centroid)
-                        del file[dataset_key]
-                        file.create_dataset(dataset_key, data=centered_point_cloud)
-                        print(f"Processed ground truth {filename}")
-
-            # Process generated data directory
-            for filename in os.listdir(generated_data_dir):
-                if filename.endswith(".h5"):
-                    file_path = os.path.join(generated_data_dir, filename)
-                    with h5py.File(file_path, 'r+') as file:
-                        if dataset_key in file:
-                            point_cloud = file[dataset_key][:]
-                            centered_point_cloud = center_point_cloud(point_cloud, reference_centroid)
-                            del file[dataset_key]
-                            file.create_dataset(dataset_key, data=centered_point_cloud)
-                            print(f"Processed generated data {filename}")
+    for filename in os.listdir(ground_truth_dir):
+        if filename.endswith(".h5"):
+            gt_file_path = os.path.join(ground_truth_dir, filename)
+            generated_file_path = os.path.join(generated_data_dir, filename)
+            if os.path.exists(generated_file_path):
+                process_pair(gt_file_path, generated_file_path, dataset_key)
 
 # Replace with your directories path and dataset key
 ground_truth_directory = './gt'

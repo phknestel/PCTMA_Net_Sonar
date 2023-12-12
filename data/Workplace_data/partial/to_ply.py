@@ -9,14 +9,14 @@ def save_point_cloud_as_ply(points, filename):
     PlyData([vertex], text=True).write(filename)
 
 # Replace with the path to your dataset
-h5_file_path = 'gt1588.h5'
+h5_file_path = '1588.h5'
 
 with h5py.File(h5_file_path, 'r') as file:
     # Assuming 'data' is the key for your point clouds
     point_cloud = file['point_cloud'][:]  # This is now treated as a single point cloud
 
 # Specify the output PLY file path
-ply_filename = 'gt1588_b_box.ply'
+ply_filename = 'test1588_bound.ply'
 
 # Save the entire dataset as one PLY file
 save_point_cloud_as_ply(point_cloud, ply_filename)
