@@ -2,7 +2,7 @@ import h5py
 import numpy as np
 
 # Open the H5 file
-with h5py.File('612.h5', 'r') as file:
+with h5py.File('gt1588.h5', 'r') as file:
     # Load the point cloud data
     point_clouds = file['point_cloud'][:]  # Replace 'dataset_name' with the actual name of the dataset
 
