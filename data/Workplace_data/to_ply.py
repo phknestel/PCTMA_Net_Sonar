@@ -16,7 +16,7 @@ with h5py.File(h5_file_path, 'r') as file:
     point_cloud = file['point_cloud'][:]  # This is now treated as a single point cloud
 
 # Specify the output PLY file path
-ply_filename = './gt588.ply'
+ply_filename = 'gt1588_b_box.ply'
 
 # Save the entire dataset as one PLY file
 save_point_cloud_as_ply(point_cloud, ply_filename)
