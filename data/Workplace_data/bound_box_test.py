@@ -21,8 +21,8 @@ def process_directory(directory, scale_factor, translation, dataset_key):
             process_file(file_path, scale_factor, translation, dataset_key)
 
 # Average scale factor and translation calculated from ground truth data
-avg_scale_factor = np.array([-0.27, -0.23, -0.25])
-avg_translation = np.array([0.27, 0.23, 0.25])
+avg_scale_factor = np.array([0.25, 0.25, 0.25])
+avg_translation = np.array([0.25, 0.25, 0.25])
 
 # Dataset key
 dataset_key = 'point_cloud'
