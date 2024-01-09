@@ -286,10 +286,8 @@ class PCTMA_Net(nn.Module):
         # self.count_parameters()
         evaluate_loss_sparse = []
         evaluate_loss_dense = []
-        evaluate_class_choice_sparse = {"Real": [], "18_Obj_Floor": [], "18_Obj_NOFloor": [], "5_Obj_Floor": [], "5_Obj_NoFloor": [], "4_Obj_Floor": [],
-                                        "4_Obj_NOFloor": [], "3_Obj_Floor": [], "3_Obj_NOFloor": []}
-        evaluate_class_choice_dense = {"Real": [], "18_Obj_Floor": [], "18_Obj_NOFloor": [], "5_Obj_Floor": [], "5_Obj_NoFloor": [], "4_Obj_Floor": [],
-                                        "4_Obj_NOFloor": [], "3_Obj_Floor": [], "3_Obj_NOFloor": []}
+        evaluate_class_choice_sparse = {"ground": []}
+        evaluate_class_choice_dense = {"ground": []}
         count = 0.0
         if self.parameter["gene_file"]:
             save_ply_path = os.path.join(os.path.dirname(__file__), "../../save_ele_data")
@@ -318,9 +316,9 @@ class PCTMA_Net(nn.Module):
                 evaluate_loss_dense.append(cd_loss_dense.item())
 
                 for k in range(partial_point_cloud.shape[0]):
-                    class_name_choice = ElevationNet.evaluation_class(
-                        label_name=test_loader.dataset.label_to_category(label_point_cloud[k]))
-                    #class_name_choice = "ground"
+                    #class_name_choice = ElevationNet.evaluation_class(
+                    #    label_name=test_loader.dataset.label_to_category(label_point_cloud[k]))
+                    class_name_choice = "ground"
                     evaluate_class_choice_sparse[class_name_choice].append(cd_loss_sparse.item())
                     evaluate_class_choice_dense[class_name_choice].append(cd_loss_dense.item())
 
@@ -342,7 +340,6 @@ class PCTMA_Net(nn.Module):
                         save_ply(gt_point_cloud[k].cpu().detach().numpy(), path=template_path)
 
                         count_k += 1
-                        
         for key, item in evaluate_class_choice_sparse.items():
             if item:
                 evaluate_class_choice_sparse[key] = sum(item) / len(item)
@@ -352,22 +349,14 @@ class PCTMA_Net(nn.Module):
                 evaluate_class_choice_dense[key] = sum(item) / len(item)
 
         self.Logger.INFO(
-            '====> cd_sparse: Real: %.4f, 18_Obj_Floor: %.4f, 18_Obj_NOFloor: %.4f, 5_Obj_Floor: %.4f, 5_Obj_NoFloor: %.4f, 4_Obj_Floor: %.4f, 4_Obj_NOFloor: %.4f, 3_Obj_Floor: %.4f, 3_Obj_NOFloor: %.4f, mean: %.4f',
-            evaluate_class_choice_sparse["Real"] * 10000, evaluate_class_choice_sparse["18_Obj_Floor"] * 10000,
-            evaluate_class_choice_sparse["18_Obj_NOFloor"] * 10000, evaluate_class_choice_sparse["5_Obj_Floor"] * 10000,
-            evaluate_class_choice_sparse["5_Obj_NoFloor"] * 10000, evaluate_class_choice_sparse["4_Obj_Floor"] * 10000,
-            evaluate_class_choice_sparse["4_Obj_NOFloor"] * 10000, evaluate_class_choice_sparse["3_Obj_Floor"] * 10000,
-            evaluate_class_choice_sparse["3_Obj_NOFloor"] * 10000,
+            '====> cd_sparse: ground: %.4f, average loss: %.4f',
+            evaluate_class_choice_sparse["ground"] * 10000,
             sum(evaluate_loss_sparse) / len(evaluate_loss_sparse) * 10000)
 
         self.Logger.INFO(
-            '====> cd_sparse: Real: %.4f, 18_Obj_Floor: %.4f, 18_Obj_NOFloor: %.4f, 5_Obj_Floor: %.4f, 5_Obj_NoFloor: %.4f, 4_Obj_Floor: %.4f, 4_Obj_NOFloor: %.4f, 3_Obj_Floor: %.4f, 3_Obj_NOFloor: %.4f, mean: %.4f',
-            evaluate_class_choice_dense["Real"] * 10000, evaluate_class_choice_dense["18_Obj_Floor"] * 10000,
-            evaluate_class_choice_dense["18_Obj_NOFloor"] * 10000, evaluate_class_choice_dense["5_Obj_Floor"] * 10000,
-            evaluate_class_choice_dense["5_Obj_NoFloor"] * 10000, evaluate_class_choice_dense["4_Obj_Floor"] * 10000,
-            evaluate_class_choice_dense["4_Obj_NOFloor"] * 10000, evaluate_class_choice_dense["3_Obj_Floor"] * 10000,
-            evaluate_class_choice_dense["3_Obj_NOFloor"] * 10000,
-            sum(evaluate_class_choice_dense) / len(evaluate_class_choice_dense) * 10000)
+            '====> cd_dense: ground: %.4f, average loss: %.4f',
+            evaluate_class_choice_dense["ground"] * 10000,
+            sum(evaluate_loss_dense) / len(evaluate_loss_dense) * 10000)
 
 
 

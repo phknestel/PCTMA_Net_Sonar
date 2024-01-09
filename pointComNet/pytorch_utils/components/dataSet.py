@@ -717,13 +717,11 @@ class ElevationNet(Dataset):
             label_point_cloud = None
         
         return gt_point_cloud, partial_point_cloud, label_point_cloud
-    
+
     @staticmethod
     def evaluation_class(label_name):
-        class_name = ["Real", "18_Obj_Floor", "18_Obj_NOFloor", "5_Obj_Floor", "5_Obj_NoFloor", "4_Obj_Floor", "4_Obj_NOFloor", "3_Obj_Floor", "3_Obj_NOFloor"]
-        for i, name in enumerate(class_name):
-            if name.lower() == label_name.lower():
-                return name
+        # Directly return the string 'ground'
+        return "ground"
 
 
     def down_sampling(self, data):
