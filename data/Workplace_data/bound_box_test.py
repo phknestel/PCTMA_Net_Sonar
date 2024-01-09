@@ -32,3 +32,7 @@ test_directory = './'
 
 # Process the test directory
 process_directory(test_directory, avg_scale_factor, avg_translation, dataset_key)
+
+
+
+#this might be bs

@@ -1,7 +1,7 @@
 import h5py
 
 # Replace with the path to one of your actual HDF5 files
-file_path = 'gt1588.h5'
+file_path = '1292.h5'
 
 with h5py.File(file_path, 'r') as f:
     print("Datasets in the HDF5 file:")
