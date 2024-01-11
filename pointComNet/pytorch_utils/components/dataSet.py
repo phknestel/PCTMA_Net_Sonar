@@ -779,23 +779,27 @@ class ElevationNet(Dataset):
         down_sampling_npts = 1024  # Target number of points
 
         for file in train_data_file:
-            print("File:", file)
-            # Load and reshape ground truth data
-            h5_name_gt = os.path.join(self.DATA_DIR, 'train/gt', file[0], '%s.h5' % file[1])
-            with h5py.File(h5_name_gt, 'r') as f1:
-                data_gt = f1['point_cloud'][:].astype('float32')
-                data_gt = differentResolution(data_gt, down_sampling_npts)
-                gt_train_data.append(data_gt)
+            try:
+                # Load and reshape ground truth data
+                h5_name_gt = os.path.join(self.DATA_DIR, 'train/gt', file[0], '%s.h5' % file[1])
+                with h5py.File(h5_name_gt, 'r') as f1:
+                    data_gt = f1['point_cloud'][:].astype('float32')
+                    data_gt = differentResolution(data_gt, down_sampling_npts)
+                    gt_train_data.append(data_gt)
 
-            # Load and reshape partial data
-            h5_name_partial = os.path.join(self.DATA_DIR, 'train/partial', file[0], '%s.h5' % file[1])
-            with h5py.File(h5_name_partial, 'r') as f2:
-                data_partial = f2['point_cloud'][:].astype('float32')
-                data_partial = differentResolution(data_partial, down_sampling_npts)
-                partial_train_data.append(data_partial)
+                # Load and reshape partial data
+                h5_name_partial = os.path.join(self.DATA_DIR, 'train/partial', file[0], '%s.h5' % file[1])
+                with h5py.File(h5_name_partial, 'r') as f2:
+                    data_partial = f2['point_cloud'][:].astype('float32')
+                    data_partial = differentResolution(data_partial, down_sampling_npts)
+                    partial_train_data.append(data_partial)
 
-            # Append the label
-            train_label.append(self.category_label[file[0]])
+                # Append the label
+                train_label.append(self.category_label[file[0]])
+
+            except ValueError as e:
+                print(f"Error processing file {file}: {e}. Skipping this file.")
+                continue
 
         gt_train_data = np.stack(gt_train_data, axis=0)
         partial_train_data = np.stack(partial_train_data, axis=0)
@@ -805,19 +809,23 @@ class ElevationNet(Dataset):
         return gt_train_data, partial_train_data, train_label
 
 
+
     def __load_test(self):
         test_data_file = self.get_test_file()
         partial_test_data = []
-        i = 0
         for file in test_data_file:
-            for h5_name in glob.glob(os.path.join(self.DATA_DIR, 'test/partial', file[0], '%s.h5' % file[1])):
-                f = h5py.File(h5_name, 'r')
-                data = f['point_cloud'][:].astype('float32')
-                f.close()
-                partial_test_data.append(data)
+            try:
+                for h5_name in glob.glob(os.path.join(self.DATA_DIR, 'test/partial', file[0], '%s.h5' % file[1])):
+                    with h5py.File(h5_name, 'r') as f:
+                        data = f['point_cloud'][:].astype('float32')
+                        partial_test_data.append(data)
+            except Exception as e:
+                print(f"Error processing file {file}: {e}. Skipping this file.")
+                continue
         partial_test_data = np.stack(partial_test_data, axis=0)
         label = torch.ones(partial_test_data.shape[0])
         return partial_test_data, partial_test_data, label
+
 
     def __load_kitti_val(self):
         h5_name = os.path.join(self.DATA_DIR, 'val/kitti_data.h5')
@@ -835,28 +843,35 @@ class ElevationNet(Dataset):
         down_sampling_npts = 1024  # Target number of points
 
         for file in val_data_file:
-            # Load and reshape ground truth data
-            h5_name_gt = os.path.join(self.DATA_DIR, 'val/gt', file[0], '%s.h5' % file[1])
-            with h5py.File(h5_name_gt, 'r') as f1:
-                data_gt = f1['point_cloud'][:].astype('float32')
-                data_gt = differentResolution(data_gt, down_sampling_npts)
-                gt_val_data.append(data_gt)
+            try:
+                # Load and reshape ground truth data
+                h5_name_gt = os.path.join(self.DATA_DIR, 'val/gt', file[0], '%s.h5' % file[1])
+                with h5py.File(h5_name_gt, 'r') as f1:
+                    data_gt = f1['point_cloud'][:].astype('float32')
+                    data_gt = differentResolution(data_gt, down_sampling_npts)
+                    gt_val_data.append(data_gt)
 
-            # Load and reshape partial data
-            h5_name_partial = os.path.join(self.DATA_DIR, 'val/partial', file[0], '%s.h5' % file[1])
-            with h5py.File(h5_name_partial, 'r') as f2:
-                data_partial = f2['point_cloud'][:].astype('float32')
-                data_partial = differentResolution(data_partial, down_sampling_npts)
-                partial_val_data.append(data_partial)
+                # Load and reshape partial data
+                h5_name_partial = os.path.join(self.DATA_DIR, 'val/partial', file[0], '%s.h5' % file[1])
+                with h5py.File(h5_name_partial, 'r') as f2:
+                    data_partial = f2['point_cloud'][:].astype('float32')
+                    data_partial = differentResolution(data_partial, down_sampling_npts)
+                    partial_val_data.append(data_partial)
 
-            # Append the label
-            val_label.append(self.category_label[file[0]])
+                # Append the label
+                val_label.append(self.category_label[file[0]])
 
-        gt_val_data = np.stack(gt_val_data, axis=0)
-        partial_val_data = np.stack(partial_val_data, axis=0)
-        val_label = np.stack(val_label, axis=0)  # Stack the labels
+            except Exception as e:
+                print(f"Error processing file {file}: {e}. Skipping this file.")
+                continue
+
+        # Ensure there is data before stacking, otherwise create empty arrays
+        gt_val_data = np.stack(gt_val_data, axis=0) if gt_val_data else np.array([], dtype=np.float32)
+        partial_val_data = np.stack(partial_val_data, axis=0) if partial_val_data else np.array([], dtype=np.float32)
+        val_label = np.stack(val_label, axis=0) if val_label else np.array([], dtype=np.float32)
 
         return gt_val_data, partial_val_data, val_label
+
 
 
     def get_category_file(self):

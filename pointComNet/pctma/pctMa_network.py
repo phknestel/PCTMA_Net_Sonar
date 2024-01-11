@@ -290,11 +290,11 @@ class PCTMA_Net(nn.Module):
         evaluate_class_choice_dense = {"ground": []}
         count = 0.0
         if self.parameter["gene_file"]:
-            save_ply_path = os.path.join(os.path.dirname(__file__), "../../save_ele_data")
+            save_ply_path = os.path.join(os.path.dirname(__file__), "../../save_ele_hyper_data")
             make_dirs(save_ply_path)
             if check_point_name is not None:
                 check_point_base_name = check_point_name.split(".")
-                save_ply_path = os.path.join(os.path.dirname(__file__), "../../save_ele_data",
+                save_ply_path = os.path.join(os.path.dirname(__file__), "../../save_ele_hyper_data",
                                              check_point_base_name[0])
                 make_dirs(save_ply_path)
             count_k = 0
