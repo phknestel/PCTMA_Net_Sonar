@@ -3,6 +3,7 @@ data/backup-ele/
 data/Data_elevation-test/rest_data_set/
 data/Data_elevation-test/test/
 data/Data_elevation-test/train/
+save_ae_ply_hyper_pre_data/
 data/Data_elevation-test/val/
 data/Data_elevation-test/
 data/dataset2019/
