@@ -1,0 +1,7 @@
+12/10/2023 05:36:40 PM - ---> use_cd: True, use_emd: True, combined_pc: True, ppd_loss: False, down_sampling: False, use_consistence: False, n_primitives: 32, use_atlas: True, gen_file: True
+12/10/2023 05:47:37 PM - ====> cd_sparse: Airplane: 19.9109, Cabinet: 138.6182, Car: 38.3839, Chair: 102.6195, Lamp: 100.3747, Sofa: 90.3588, Table: 122.9184, Watercraft: 36.0517, mean: 81.1545
+12/10/2023 05:47:37 PM - ====> cd_dense: Airplane: 19.9109, Cabinet: 138.6182, Car: 38.3839, Chair: 102.6195, Lamp: 100.3747, Sofa: 90.3588, Table: 122.9184, Watercraft: 36.0517, mean: 81.1545
+12/10/2023 05:47:37 PM - Train 0/1, loss_ae: 110.584988, loss_cd: 110.578160, evaluate_cd_spares: 81.1545, evaluate_cd_dense: 81.1545 
+
+12/10/2023 05:47:58 PM - ====> cd_sparse: Airplane: 19.9109, Cabinet: 138.6182, Car: 38.3839, Chair: 102.6195, Lamp: 100.3747, Sofa: 90.3588, Table: 122.9184, Watercraft: 36.0517, mean: 81.1545
+12/10/2023 05:47:58 PM - ====> cd_dense: Airplane: 19.9109, Cabinet: 138.6182, Car: 38.3839, Chair: 102.6195, Lamp: 100.3747, Sofa: 90.3588, Table: 122.9184, Watercraft: 36.0517, mean: 81.1545

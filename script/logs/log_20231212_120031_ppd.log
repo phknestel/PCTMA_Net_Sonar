@@ -1,0 +1,5 @@
+12/12/2023 12:00:31 PM - ---> use_cd: True, use_emd: True, combined_pc: True, ppd_loss: False, down_sampling: False, use_consistence: False, n_primitives: 32, use_atlas: True, gen_file: True
+12/12/2023 12:01:07 PM - ====> cd_sparse: ground: 457.6261, average loss: 457.6261
+12/12/2023 12:01:07 PM - ====> cd_dense: ground: 457.6261, average loss: 457.6261
+12/12/2023 12:01:07 PM - Train 0/1, loss_ae: 613.176694, loss_cd: 613.141341, evaluate_cd_spares: 457.6261, evaluate_cd_dense: 457.6261 
+

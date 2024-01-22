@@ -1,0 +1,11 @@
+12/11/2023 02:09:24 PM - ---> use_cd: True, use_emd: True, combined_pc: True, ppd_loss: False, down_sampling: False, use_consistence: False, n_primitives: 32, use_atlas: True, gen_file: True
+12/11/2023 02:09:59 PM - ====> cd_sparse: ground: 374.1064, average loss: 374.1064
+12/11/2023 02:09:59 PM - ====> cd_dense: ground: 374.1064, average loss: 374.1064
+12/11/2023 02:09:59 PM - Train 0/2, loss_ae: 630.414919, loss_cd: 630.381414, evaluate_cd_spares: 374.1064, evaluate_cd_dense: 374.1064 
+
+12/11/2023 02:10:32 PM - ====> cd_sparse: ground: 255.2732, average loss: 255.2732
+12/11/2023 02:10:32 PM - ====> cd_dense: ground: 255.2732, average loss: 255.2732
+12/11/2023 02:10:32 PM - Train 1/2, loss_ae: 270.281993, loss_cd: 270.250369, evaluate_cd_spares: 255.2732, evaluate_cd_dense: 255.2732 
+
+12/11/2023 02:10:38 PM - ====> cd_sparse: ground: 255.2732, average loss: 255.2732
+12/11/2023 02:10:38 PM - ====> cd_dense: ground: 255.2732, average loss: 255.2732

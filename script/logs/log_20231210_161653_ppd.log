@@ -1,0 +1,15 @@
+12/10/2023 04:16:53 PM - ---> use_cd: True, use_emd: True, combined_pc: True, ppd_loss: False, down_sampling: False, use_consistence: False, n_primitives: 32, use_atlas: True, gen_file: True
+12/10/2023 04:27:40 PM - ====> cd_sparse: Airplane: 40.6134, Cabinet: 142.6927, Car: 45.7058, Chair: 92.7337, Lamp: 80.7639, Sofa: 114.6772, Table: 181.7324, Watercraft: 56.1695, mean: 94.3861
+12/10/2023 04:27:40 PM - ====> cd_dense: Airplane: 40.6134, Cabinet: 142.6927, Car: 45.7058, Chair: 92.7337, Lamp: 80.7639, Sofa: 114.6772, Table: 181.7324, Watercraft: 56.1695, mean: 94.3861
+12/10/2023 04:27:40 PM - Train 0/3, loss_ae: 110.218242, loss_cd: 110.211513, evaluate_cd_spares: 94.3861, evaluate_cd_dense: 94.3861 
+
+12/10/2023 04:38:25 PM - ====> cd_sparse: Airplane: 49.8837, Cabinet: 102.6898, Car: 48.5967, Chair: 85.2983, Lamp: 72.0989, Sofa: 82.6304, Table: 135.4423, Watercraft: 66.8402, mean: 80.4350
+12/10/2023 04:38:25 PM - ====> cd_dense: Airplane: 49.8837, Cabinet: 102.6898, Car: 48.5967, Chair: 85.2983, Lamp: 72.0989, Sofa: 82.6304, Table: 135.4423, Watercraft: 66.8402, mean: 80.4350
+12/10/2023 04:38:25 PM - Train 1/3, loss_ae: 68.289319, loss_cd: 68.282560, evaluate_cd_spares: 80.4350, evaluate_cd_dense: 80.4350 
+
+12/10/2023 04:49:10 PM - ====> cd_sparse: Airplane: 14.8988, Cabinet: 106.0815, Car: 23.2706, Chair: 84.2121, Lamp: 57.5037, Sofa: 152.7419, Table: 175.5863, Watercraft: 29.1849, mean: 80.4350
+12/10/2023 04:49:10 PM - ====> cd_dense: Airplane: 14.8988, Cabinet: 106.0815, Car: 23.2706, Chair: 84.2121, Lamp: 57.5037, Sofa: 152.7419, Table: 175.5863, Watercraft: 29.1849, mean: 80.4350
+12/10/2023 04:49:10 PM - Train 2/3, loss_ae: 50.053945, loss_cd: 50.045784, evaluate_cd_spares: 80.4350, evaluate_cd_dense: 80.4350 
+
+12/10/2023 04:49:32 PM - ====> cd_sparse: Airplane: 14.8988, Cabinet: 106.0815, Car: 23.2706, Chair: 84.2121, Lamp: 57.5037, Sofa: 152.7419, Table: 175.5863, Watercraft: 29.1849, mean: 80.4350
+12/10/2023 04:49:32 PM - ====> cd_dense: Airplane: 14.8988, Cabinet: 106.0815, Car: 23.2706, Chair: 84.2121, Lamp: 57.5037, Sofa: 152.7419, Table: 175.5863, Watercraft: 29.1849, mean: 80.4350
