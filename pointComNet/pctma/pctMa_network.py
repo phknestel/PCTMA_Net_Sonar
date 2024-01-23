@@ -290,11 +290,11 @@ class PCTMA_Net(nn.Module):
         evaluate_class_choice_dense = {"ground": []}
         count = 0.0
         if self.parameter["gene_file"]:
-            save_ply_path = os.path.join(os.path.dirname(__file__), "../../denoise_hyper_nofloor")
+            save_ply_path = os.path.join(os.path.dirname(__file__), "../../denoise_pretrain_hyper_nofloor_test")
             make_dirs(save_ply_path)
             if check_point_name is not None:
                 check_point_base_name = check_point_name.split(".")
-                save_ply_path = os.path.join(os.path.dirname(__file__), "../../denoise_hyper_nofloor",
+                save_ply_path = os.path.join(os.path.dirname(__file__), "../../denoise__pretrain_hyper_nofloor_test",
                                              check_point_base_name[0])
                 make_dirs(save_ply_path)
             count_k = 0
@@ -349,6 +349,7 @@ class PCTMA_Net(nn.Module):
                 evaluate_class_choice_dense[key] = sum(item) / len(item)
 
         self.Logger.INFO(
+            'No_Floor datasets, Pre_train, Hyperparameter, Denoise',
             '====> cd_sparse: ground: %.4f, average loss: %.4f',
             evaluate_class_choice_sparse["ground"] * 10000,
             sum(evaluate_loss_sparse) / len(evaluate_loss_sparse) * 10000)
