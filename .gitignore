@@ -1,6 +1,15 @@
 # Created by .ignore support plugin (hsz.mobi)
-data/backup-ele/
 
+# General Python ignore patterns
+__pycache__/
+.vscode
+venv/
+
+# Ignore .pth files
+*.pth
+
+# Specific data directories to ignore
+data/backup-ele/
 denoise_pretrain_hyper_nofloor/ 
 denoise_pretrain_hyper_floor/
 denoise_hyper_floor/
@@ -15,17 +24,16 @@ save_ply_data
 save_ele_data
 save_ele_hyper_data/
 save_kitti_ply_data
-pointComNet/__pycache__/
-pointComNet/models/__pycache__/
-__pycache__
-pointComNet/utils/__pycache__/
-.vscode
-venv/
+
+# Specific scripts and checkpoints to ignore
 script/checkpoints/
 
-# Ignore .pth files
-*.pth
+# pointComNet specific ignore patterns
+pointComNet/__pycache__/
+pointComNet/models/__pycache__/
+pointComNet/utils/__pycache__/
 
+# Exceptions in data/Data_elevation-test directory
 # Ignore everything in the directory
 data/Data_elevation-test/*
 
@@ -34,5 +42,3 @@ data/Data_elevation-test/*
 !data/Data_elevation-test/find_del_empty_or_zero.py
 !data/Data_elevation-test/write_list.py
 !data/Data_elevation-test/synsetoffset2category.txt
-
-
