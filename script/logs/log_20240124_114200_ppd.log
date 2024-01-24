@@ -19,3 +19,7 @@
 01/24/2024 12:08:45 PM - ====> cd_dense: ground: 113.5939, average loss: 113.5939
 01/24/2024 12:08:45 PM - Train 4/300, loss_ae: 77.847912, loss_cd: 77.824643, evaluate_cd_spares: 86.6380, evaluate_cd_dense: 86.6380 
 
+01/24/2024 12:14:14 PM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: 83.1306, average loss: 83.1306
+01/24/2024 12:14:14 PM - ====> cd_dense: ground: 83.1306, average loss: 83.1306
+01/24/2024 12:14:14 PM - Train 5/300, loss_ae: 72.869873, loss_cd: 72.849106, evaluate_cd_spares: 83.1306, evaluate_cd_dense: 83.1306 
+
