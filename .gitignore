@@ -8,9 +8,8 @@ denoise_pretrain_hyper_floor/
 denoise_hyper_floor/
 denoise_hyper_nofloor/
 denoise_pretrain_hyper_nofloor_test/
+alldataset_noPretrain_noHyper_noDenoise/
 save_ae_ply_hyper_pre_data/
-data/Data_elevation-test/val/
-data/Data_elevation-test/
 data/dataset2019/
 data/Workspace_data
 save_ae_ply_data
@@ -28,3 +27,11 @@ script/checkpoints/
 
 # Ignore .pth files
 *.pth
+
+#manage the database
+data/Data_elevation-test/
+!data/Data_elevation-test/copy_h5_to_database.py
+!data/Data_elevation-test/find_del_empty_or_zero.py
+!data/Data_elevation-test/write_list.py
+!data/Data_elevation-test/synsetoffset2category.txt
+

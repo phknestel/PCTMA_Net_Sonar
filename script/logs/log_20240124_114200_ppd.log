@@ -1,0 +1,21 @@
+01/24/2024 11:42:00 AM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ---> use_cd: True, use_emd: True, combined_pc: True, ppd_loss: False, down_sampling: False, use_consistence: False, n_primitives: 32, use_atlas: True, gen_file: True
+01/24/2024 11:47:28 AM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: 110.0371, average loss: 110.0371
+01/24/2024 11:47:28 AM - ====> cd_dense: ground: 110.0371, average loss: 110.0371
+01/24/2024 11:47:28 AM - Train 0/300, loss_ae: 188.481823, loss_cd: 188.455111, evaluate_cd_spares: 110.0371, evaluate_cd_dense: 110.0371 
+
+01/24/2024 11:52:45 AM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: 102.2344, average loss: 102.2344
+01/24/2024 11:52:45 AM - ====> cd_dense: ground: 102.2344, average loss: 102.2344
+01/24/2024 11:52:45 AM - Train 1/300, loss_ae: 103.312556, loss_cd: 103.283516, evaluate_cd_spares: 102.2344, evaluate_cd_dense: 102.2344 
+
+01/24/2024 11:58:03 AM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: 102.6543, average loss: 102.6543
+01/24/2024 11:58:03 AM - ====> cd_dense: ground: 102.6543, average loss: 102.6543
+01/24/2024 11:58:03 AM - Train 2/300, loss_ae: 93.512245, loss_cd: 93.481955, evaluate_cd_spares: 102.2344, evaluate_cd_dense: 102.2344 
+
+01/24/2024 12:03:19 PM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: 86.6380, average loss: 86.6380
+01/24/2024 12:03:19 PM - ====> cd_dense: ground: 86.6380, average loss: 86.6380
+01/24/2024 12:03:19 PM - Train 3/300, loss_ae: 86.138500, loss_cd: 86.111278, evaluate_cd_spares: 86.6380, evaluate_cd_dense: 86.6380 
+
+01/24/2024 12:08:45 PM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: 113.5939, average loss: 113.5939
+01/24/2024 12:08:45 PM - ====> cd_dense: ground: 113.5939, average loss: 113.5939
+01/24/2024 12:08:45 PM - Train 4/300, loss_ae: 77.847912, loss_cd: 77.824643, evaluate_cd_spares: 86.6380, evaluate_cd_dense: 86.6380 
+
