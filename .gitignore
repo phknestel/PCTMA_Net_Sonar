@@ -26,10 +26,13 @@ script/checkpoints/
 # Ignore .pth files
 *.pth
 
-#manage the database
-data/Data_elevation-test/
+# Ignore everything in the directory
+data/Data_elevation-test/*
+
+# But don't ignore these specific files
 !data/Data_elevation-test/copy_h5_to_database.py
 !data/Data_elevation-test/find_del_empty_or_zero.py
 !data/Data_elevation-test/write_list.py
 !data/Data_elevation-test/synsetoffset2category.txt
+
 
