@@ -1,8 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 data/backup-ele/
-data/Data_elevation-test/rest_data_set/
-data/Data_elevation-test/test/
-data/Data_elevation-test/train/
+
 denoise_pretrain_hyper_nofloor/ 
 denoise_pretrain_hyper_floor/
 denoise_hyper_floor/
