@@ -7,6 +7,7 @@ denoise_pretrain_hyper_nofloor/
 denoise_pretrain_hyper_floor/
 denoise_hyper_floor/
 denoise_hyper_nofloor/
+denoise_pretrain_hyper_nofloor_test/
 save_ae_ply_hyper_pre_data/
 data/Data_elevation-test/val/
 data/Data_elevation-test/

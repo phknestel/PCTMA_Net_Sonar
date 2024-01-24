@@ -54,7 +54,7 @@ class PCTMA_Net(nn.Module):
         self.use_emd = self.parameter["use_emd"]
 
         self.Logger.INFO(
-            "---> use_cd: %r, use_emd: %r, combined_pc: %r, ppd_loss: %r, down_sampling: %r, use_consistence: %r, n_primitives: %r, use_atlas: %r, gen_file: %r",
+            "No_Floor datasets, Pre_train, Hyperparameter, Denoise ---> use_cd: %r, use_emd: %r, combined_pc: %r, ppd_loss: %r, down_sampling: %r, use_consistence: %r, n_primitives: %r, use_atlas: %r, gen_file: %r",
             self.parameter["use_cd"],
             self.parameter["use_emd"],
             self.parameter["combined_pc"],
@@ -348,16 +348,19 @@ class PCTMA_Net(nn.Module):
             if item:
                 evaluate_class_choice_dense[key] = sum(item) / len(item)
 
-        self.Logger.INFO(
-            'No_Floor datasets, Pre_train, Hyperparameter, Denoise',
-            '====> cd_sparse: ground: %.4f, average loss: %.4f',
+        # Correct usage of logging with string formatting
+        formatted_message_sparse = 'No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: %.4f, average loss: %.4f' % (
             evaluate_class_choice_sparse["ground"] * 10000,
-            sum(evaluate_loss_sparse) / len(evaluate_loss_sparse) * 10000)
+            sum(evaluate_loss_sparse) / len(evaluate_loss_sparse) * 10000
+        )
+        self.Logger.INFO(formatted_message_sparse)
 
-        self.Logger.INFO(
-            '====> cd_dense: ground: %.4f, average loss: %.4f',
+        formatted_message_dense = '====> cd_dense: ground: %.4f, average loss: %.4f' % (
             evaluate_class_choice_dense["ground"] * 10000,
-            sum(evaluate_loss_dense) / len(evaluate_loss_dense) * 10000)
+            sum(evaluate_loss_dense) / len(evaluate_loss_dense) * 10000
+        )
+        self.Logger.INFO(formatted_message_dense)
+
 
 
 

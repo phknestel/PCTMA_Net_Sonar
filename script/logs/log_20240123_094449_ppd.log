@@ -1,1 +1,4 @@
 01/23/2024 09:44:49 AM - ---> use_cd: False, use_emd: True, combined_pc: True, ppd_loss: False, down_sampling: False, use_consistence: False, n_primitives: 48, use_atlas: True, gen_file: True
+01/23/2024 09:47:22 AM - ====> cd_dense: ground: 104.9738, average loss: 104.9738
+01/23/2024 09:47:22 AM - Train 0/300, loss_ae: 164.821626, loss_cd: 144.041340, evaluate_cd_spares: 104.9738, evaluate_cd_dense: 104.9738 
+

@@ -1,0 +1,1203 @@
+01/23/2024 09:55:43 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ---> use_cd: False, use_emd: True, combined_pc: True, ppd_loss: False, down_sampling: False, use_consistence: False, n_primitives: 48, use_atlas: True, gen_file: True
+01/23/2024 09:58:14 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 98.6561, average loss: 98.6561
+01/23/2024 09:58:14 AM - ====> cd_dense: ground: 98.6561, average loss: 98.6561
+01/23/2024 09:58:14 AM - Train 0/300, loss_ae: 162.314105, loss_cd: 137.651385, evaluate_cd_spares: 98.6561, evaluate_cd_dense: 98.6561 
+
+01/23/2024 10:00:43 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 90.4150, average loss: 90.4150
+01/23/2024 10:00:43 AM - ====> cd_dense: ground: 90.4150, average loss: 90.4150
+01/23/2024 10:00:43 AM - Train 1/300, loss_ae: 83.873050, loss_cd: 96.118453, evaluate_cd_spares: 90.4150, evaluate_cd_dense: 90.4150 
+
+01/23/2024 10:03:13 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 80.8877, average loss: 80.8877
+01/23/2024 10:03:13 AM - ====> cd_dense: ground: 80.8877, average loss: 80.8877
+01/23/2024 10:03:13 AM - Train 2/300, loss_ae: 66.463727, loss_cd: 87.211944, evaluate_cd_spares: 80.8877, evaluate_cd_dense: 80.8877 
+
+01/23/2024 10:05:41 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 77.3459, average loss: 77.3459
+01/23/2024 10:05:41 AM - ====> cd_dense: ground: 77.3459, average loss: 77.3459
+01/23/2024 10:05:41 AM - Train 3/300, loss_ae: 58.272543, loss_cd: 80.950546, evaluate_cd_spares: 77.3459, evaluate_cd_dense: 77.3459 
+
+01/23/2024 10:08:11 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 76.6159, average loss: 76.6159
+01/23/2024 10:08:11 AM - ====> cd_dense: ground: 76.6159, average loss: 76.6159
+01/23/2024 10:08:11 AM - Train 4/300, loss_ae: 52.898362, loss_cd: 76.904679, evaluate_cd_spares: 76.6159, evaluate_cd_dense: 76.6159 
+
+01/23/2024 10:10:40 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 75.3673, average loss: 75.3673
+01/23/2024 10:10:40 AM - ====> cd_dense: ground: 75.3673, average loss: 75.3673
+01/23/2024 10:10:40 AM - Train 5/300, loss_ae: 49.850969, loss_cd: 74.486338, evaluate_cd_spares: 75.3673, evaluate_cd_dense: 75.3673 
+
+01/23/2024 10:13:09 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 73.8086, average loss: 73.8086
+01/23/2024 10:13:09 AM - ====> cd_dense: ground: 73.8086, average loss: 73.8086
+01/23/2024 10:13:09 AM - Train 6/300, loss_ae: 45.665927, loss_cd: 72.463916, evaluate_cd_spares: 73.8086, evaluate_cd_dense: 73.8086 
+
+01/23/2024 10:15:39 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 73.0621, average loss: 73.0621
+01/23/2024 10:15:39 AM - ====> cd_dense: ground: 73.0621, average loss: 73.0621
+01/23/2024 10:15:39 AM - Train 7/300, loss_ae: 44.151656, loss_cd: 70.840868, evaluate_cd_spares: 73.0621, evaluate_cd_dense: 73.0621 
+
+01/23/2024 10:18:08 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 70.9435, average loss: 70.9435
+01/23/2024 10:18:08 AM - ====> cd_dense: ground: 70.9435, average loss: 70.9435
+01/23/2024 10:18:08 AM - Train 8/300, loss_ae: 41.767883, loss_cd: 69.660894, evaluate_cd_spares: 70.9435, evaluate_cd_dense: 70.9435 
+
+01/23/2024 10:20:37 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 70.8842, average loss: 70.8842
+01/23/2024 10:20:37 AM - ====> cd_dense: ground: 70.8842, average loss: 70.8842
+01/23/2024 10:20:37 AM - Train 9/300, loss_ae: 40.650408, loss_cd: 68.737793, evaluate_cd_spares: 70.8842, evaluate_cd_dense: 70.8842 
+
+01/23/2024 10:23:06 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 71.0876, average loss: 71.0876
+01/23/2024 10:23:06 AM - ====> cd_dense: ground: 71.0876, average loss: 71.0876
+01/23/2024 10:23:06 AM - Train 10/300, loss_ae: 38.875938, loss_cd: 68.041637, evaluate_cd_spares: 70.8842, evaluate_cd_dense: 70.8842 
+
+01/23/2024 10:25:33 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 68.0816, average loss: 68.0816
+01/23/2024 10:25:33 AM - ====> cd_dense: ground: 68.0816, average loss: 68.0816
+01/23/2024 10:25:33 AM - Train 11/300, loss_ae: 37.283131, loss_cd: 67.070167, evaluate_cd_spares: 68.0816, evaluate_cd_dense: 68.0816 
+
+01/23/2024 10:28:01 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 71.6563, average loss: 71.6563
+01/23/2024 10:28:01 AM - ====> cd_dense: ground: 71.6563, average loss: 71.6563
+01/23/2024 10:28:01 AM - Train 12/300, loss_ae: 36.086895, loss_cd: 64.899165, evaluate_cd_spares: 68.0816, evaluate_cd_dense: 68.0816 
+
+01/23/2024 10:30:29 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 71.1202, average loss: 71.1202
+01/23/2024 10:30:29 AM - ====> cd_dense: ground: 71.1202, average loss: 71.1202
+01/23/2024 10:30:29 AM - Train 13/300, loss_ae: 34.828857, loss_cd: 64.083047, evaluate_cd_spares: 68.0816, evaluate_cd_dense: 68.0816 
+
+01/23/2024 10:32:56 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 69.2391, average loss: 69.2391
+01/23/2024 10:32:56 AM - ====> cd_dense: ground: 69.2391, average loss: 69.2391
+01/23/2024 10:32:56 AM - Train 14/300, loss_ae: 34.398952, loss_cd: 64.095813, evaluate_cd_spares: 68.0816, evaluate_cd_dense: 68.0816 
+
+01/23/2024 10:35:23 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 68.7584, average loss: 68.7584
+01/23/2024 10:35:23 AM - ====> cd_dense: ground: 68.7584, average loss: 68.7584
+01/23/2024 10:35:23 AM - Train 15/300, loss_ae: 34.176771, loss_cd: 63.548583, evaluate_cd_spares: 68.0816, evaluate_cd_dense: 68.0816 
+
+01/23/2024 10:37:50 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 70.3442, average loss: 70.3442
+01/23/2024 10:37:50 AM - ====> cd_dense: ground: 70.3442, average loss: 70.3442
+01/23/2024 10:37:50 AM - Train 16/300, loss_ae: 32.878548, loss_cd: 62.372076, evaluate_cd_spares: 68.0816, evaluate_cd_dense: 68.0816 
+
+01/23/2024 10:40:17 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 69.9729, average loss: 69.9729
+01/23/2024 10:40:17 AM - ====> cd_dense: ground: 69.9729, average loss: 69.9729
+01/23/2024 10:40:17 AM - Train 17/300, loss_ae: 32.281738, loss_cd: 62.730860, evaluate_cd_spares: 68.0816, evaluate_cd_dense: 68.0816 
+
+01/23/2024 10:42:45 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 68.6309, average loss: 68.6309
+01/23/2024 10:42:45 AM - ====> cd_dense: ground: 68.6309, average loss: 68.6309
+01/23/2024 10:42:45 AM - Train 18/300, loss_ae: 30.939306, loss_cd: 61.756706, evaluate_cd_spares: 68.0816, evaluate_cd_dense: 68.0816 
+
+01/23/2024 10:45:11 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 68.0682, average loss: 68.0682
+01/23/2024 10:45:11 AM - ====> cd_dense: ground: 68.0682, average loss: 68.0682
+01/23/2024 10:45:11 AM - Train 19/300, loss_ae: 30.348301, loss_cd: 61.593345, evaluate_cd_spares: 68.0682, evaluate_cd_dense: 68.0682 
+
+01/23/2024 10:47:40 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 68.8121, average loss: 68.8121
+01/23/2024 10:47:40 AM - ====> cd_dense: ground: 68.8121, average loss: 68.8121
+01/23/2024 10:47:40 AM - Train 20/300, loss_ae: 29.149512, loss_cd: 60.785368, evaluate_cd_spares: 68.0682, evaluate_cd_dense: 68.0682 
+
+01/23/2024 10:50:08 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 66.5111, average loss: 66.5111
+01/23/2024 10:50:08 AM - ====> cd_dense: ground: 66.5111, average loss: 66.5111
+01/23/2024 10:50:08 AM - Train 21/300, loss_ae: 29.519851, loss_cd: 60.501195, evaluate_cd_spares: 66.5111, evaluate_cd_dense: 66.5111 
+
+01/23/2024 10:52:36 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.0819, average loss: 65.0819
+01/23/2024 10:52:36 AM - ====> cd_dense: ground: 65.0819, average loss: 65.0819
+01/23/2024 10:52:36 AM - Train 22/300, loss_ae: 29.243577, loss_cd: 59.932721, evaluate_cd_spares: 65.0819, evaluate_cd_dense: 65.0819 
+
+01/23/2024 10:55:05 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 67.5417, average loss: 67.5417
+01/23/2024 10:55:05 AM - ====> cd_dense: ground: 67.5417, average loss: 67.5417
+01/23/2024 10:55:05 AM - Train 23/300, loss_ae: 28.433936, loss_cd: 59.538059, evaluate_cd_spares: 65.0819, evaluate_cd_dense: 65.0819 
+
+01/23/2024 10:57:31 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.4518, average loss: 64.4518
+01/23/2024 10:57:31 AM - ====> cd_dense: ground: 64.4518, average loss: 64.4518
+01/23/2024 10:57:31 AM - Train 24/300, loss_ae: 27.571520, loss_cd: 58.980069, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:00:01 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.9240, average loss: 65.9240
+01/23/2024 11:00:01 AM - ====> cd_dense: ground: 65.9240, average loss: 65.9240
+01/23/2024 11:00:01 AM - Train 25/300, loss_ae: 27.004736, loss_cd: 58.656432, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:02:28 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 66.7778, average loss: 66.7778
+01/23/2024 11:02:28 AM - ====> cd_dense: ground: 66.7778, average loss: 66.7778
+01/23/2024 11:02:28 AM - Train 26/300, loss_ae: 27.165514, loss_cd: 58.788652, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:04:55 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.4678, average loss: 64.4678
+01/23/2024 11:04:55 AM - ====> cd_dense: ground: 64.4678, average loss: 64.4678
+01/23/2024 11:04:55 AM - Train 27/300, loss_ae: 26.492408, loss_cd: 58.199505, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:07:23 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.6261, average loss: 64.6261
+01/23/2024 11:07:23 AM - ====> cd_dense: ground: 64.6261, average loss: 64.6261
+01/23/2024 11:07:23 AM - Train 28/300, loss_ae: 27.611174, loss_cd: 58.895278, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:09:50 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 66.7094, average loss: 66.7094
+01/23/2024 11:09:50 AM - ====> cd_dense: ground: 66.7094, average loss: 66.7094
+01/23/2024 11:09:50 AM - Train 29/300, loss_ae: 26.620947, loss_cd: 58.102078, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:12:18 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.5003, average loss: 64.5003
+01/23/2024 11:12:18 AM - ====> cd_dense: ground: 64.5003, average loss: 64.5003
+01/23/2024 11:12:18 AM - Train 30/300, loss_ae: 25.702272, loss_cd: 57.699049, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:14:46 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.4857, average loss: 65.4857
+01/23/2024 11:14:46 AM - ====> cd_dense: ground: 65.4857, average loss: 65.4857
+01/23/2024 11:14:46 AM - Train 31/300, loss_ae: 24.839547, loss_cd: 56.650198, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:17:12 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 66.9914, average loss: 66.9914
+01/23/2024 11:17:12 AM - ====> cd_dense: ground: 66.9914, average loss: 66.9914
+01/23/2024 11:17:12 AM - Train 32/300, loss_ae: 25.694758, loss_cd: 57.959937, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:19:39 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.3727, average loss: 65.3727
+01/23/2024 11:19:39 AM - ====> cd_dense: ground: 65.3727, average loss: 65.3727
+01/23/2024 11:19:39 AM - Train 33/300, loss_ae: 26.183574, loss_cd: 57.564049, evaluate_cd_spares: 64.4518, evaluate_cd_dense: 64.4518 
+
+01/23/2024 11:22:06 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.1887, average loss: 64.1887
+01/23/2024 11:22:06 AM - ====> cd_dense: ground: 64.1887, average loss: 64.1887
+01/23/2024 11:22:06 AM - Train 34/300, loss_ae: 25.165302, loss_cd: 56.929707, evaluate_cd_spares: 64.1887, evaluate_cd_dense: 64.1887 
+
+01/23/2024 11:24:35 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.1812, average loss: 63.1812
+01/23/2024 11:24:35 AM - ====> cd_dense: ground: 63.1812, average loss: 63.1812
+01/23/2024 11:24:35 AM - Train 35/300, loss_ae: 24.324000, loss_cd: 56.192291, evaluate_cd_spares: 63.1812, evaluate_cd_dense: 63.1812 
+
+01/23/2024 11:27:04 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.0733, average loss: 64.0733
+01/23/2024 11:27:04 AM - ====> cd_dense: ground: 64.0733, average loss: 64.0733
+01/23/2024 11:27:04 AM - Train 36/300, loss_ae: 23.996179, loss_cd: 55.463361, evaluate_cd_spares: 63.1812, evaluate_cd_dense: 63.1812 
+
+01/23/2024 11:29:31 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.7158, average loss: 65.7158
+01/23/2024 11:29:31 AM - ====> cd_dense: ground: 65.7158, average loss: 65.7158
+01/23/2024 11:29:31 AM - Train 37/300, loss_ae: 23.359679, loss_cd: 55.462756, evaluate_cd_spares: 63.1812, evaluate_cd_dense: 63.1812 
+
+01/23/2024 11:31:58 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.8442, average loss: 63.8442
+01/23/2024 11:31:58 AM - ====> cd_dense: ground: 63.8442, average loss: 63.8442
+01/23/2024 11:31:58 AM - Train 38/300, loss_ae: 23.600055, loss_cd: 55.640109, evaluate_cd_spares: 63.1812, evaluate_cd_dense: 63.1812 
+
+01/23/2024 11:34:26 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.0219, average loss: 65.0219
+01/23/2024 11:34:26 AM - ====> cd_dense: ground: 65.0219, average loss: 65.0219
+01/23/2024 11:34:26 AM - Train 39/300, loss_ae: 23.085354, loss_cd: 55.006621, evaluate_cd_spares: 63.1812, evaluate_cd_dense: 63.1812 
+
+01/23/2024 11:36:56 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.3645, average loss: 63.3645
+01/23/2024 11:36:56 AM - ====> cd_dense: ground: 63.3645, average loss: 63.3645
+01/23/2024 11:36:56 AM - Train 40/300, loss_ae: 23.353401, loss_cd: 55.217571, evaluate_cd_spares: 63.1812, evaluate_cd_dense: 63.1812 
+
+01/23/2024 11:39:24 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.0426, average loss: 63.0426
+01/23/2024 11:39:24 AM - ====> cd_dense: ground: 63.0426, average loss: 63.0426
+01/23/2024 11:39:24 AM - Train 41/300, loss_ae: 22.527855, loss_cd: 54.805663, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 11:41:53 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.4256, average loss: 65.4256
+01/23/2024 11:41:53 AM - ====> cd_dense: ground: 65.4256, average loss: 65.4256
+01/23/2024 11:41:53 AM - Train 42/300, loss_ae: 22.649892, loss_cd: 54.468559, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 11:44:21 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.8947, average loss: 64.8947
+01/23/2024 11:44:21 AM - ====> cd_dense: ground: 64.8947, average loss: 64.8947
+01/23/2024 11:44:21 AM - Train 43/300, loss_ae: 22.412580, loss_cd: 54.947318, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 11:46:47 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 67.6127, average loss: 67.6127
+01/23/2024 11:46:47 AM - ====> cd_dense: ground: 67.6127, average loss: 67.6127
+01/23/2024 11:46:47 AM - Train 44/300, loss_ae: 21.907045, loss_cd: 54.525554, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 11:49:15 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.1496, average loss: 63.1496
+01/23/2024 11:49:15 AM - ====> cd_dense: ground: 63.1496, average loss: 63.1496
+01/23/2024 11:49:15 AM - Train 45/300, loss_ae: 22.084932, loss_cd: 54.947368, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 11:51:42 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.9987, average loss: 64.9987
+01/23/2024 11:51:42 AM - ====> cd_dense: ground: 64.9987, average loss: 64.9987
+01/23/2024 11:51:42 AM - Train 46/300, loss_ae: 22.517556, loss_cd: 54.591460, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 11:54:10 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.8669, average loss: 63.8669
+01/23/2024 11:54:10 AM - ====> cd_dense: ground: 63.8669, average loss: 63.8669
+01/23/2024 11:54:10 AM - Train 47/300, loss_ae: 21.984338, loss_cd: 54.465742, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 11:56:36 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.1402, average loss: 63.1402
+01/23/2024 11:56:36 AM - ====> cd_dense: ground: 63.1402, average loss: 63.1402
+01/23/2024 11:56:36 AM - Train 48/300, loss_ae: 21.896248, loss_cd: 54.401306, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 11:59:03 AM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.0033, average loss: 65.0033
+01/23/2024 11:59:03 AM - ====> cd_dense: ground: 65.0033, average loss: 65.0033
+01/23/2024 11:59:03 AM - Train 49/300, loss_ae: 21.295723, loss_cd: 53.587146, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 12:01:31 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.2822, average loss: 64.2822
+01/23/2024 12:01:31 PM - ====> cd_dense: ground: 64.2822, average loss: 64.2822
+01/23/2024 12:01:31 PM - Train 50/300, loss_ae: 21.542005, loss_cd: 54.707028, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 12:03:57 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.3579, average loss: 63.3579
+01/23/2024 12:03:57 PM - ====> cd_dense: ground: 63.3579, average loss: 63.3579
+01/23/2024 12:03:57 PM - Train 51/300, loss_ae: 21.624634, loss_cd: 54.338092, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 12:06:24 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.2462, average loss: 64.2462
+01/23/2024 12:06:24 PM - ====> cd_dense: ground: 64.2462, average loss: 64.2462
+01/23/2024 12:06:24 PM - Train 52/300, loss_ae: 20.992202, loss_cd: 53.727669, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 12:08:52 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.9293, average loss: 64.9293
+01/23/2024 12:08:52 PM - ====> cd_dense: ground: 64.9293, average loss: 64.9293
+01/23/2024 12:08:52 PM - Train 53/300, loss_ae: 20.540493, loss_cd: 53.087882, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 12:11:18 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.0482, average loss: 65.0482
+01/23/2024 12:11:18 PM - ====> cd_dense: ground: 65.0482, average loss: 65.0482
+01/23/2024 12:11:18 PM - Train 54/300, loss_ae: 20.488983, loss_cd: 53.030775, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 12:13:46 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.8456, average loss: 63.8456
+01/23/2024 12:13:46 PM - ====> cd_dense: ground: 63.8456, average loss: 63.8456
+01/23/2024 12:13:46 PM - Train 55/300, loss_ae: 19.922671, loss_cd: 52.570918, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 12:16:12 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.5429, average loss: 63.5429
+01/23/2024 12:16:12 PM - ====> cd_dense: ground: 63.5429, average loss: 63.5429
+01/23/2024 12:16:12 PM - Train 56/300, loss_ae: 20.156074, loss_cd: 52.770082, evaluate_cd_spares: 63.0426, evaluate_cd_dense: 63.0426 
+
+01/23/2024 12:18:39 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.0025, average loss: 63.0025
+01/23/2024 12:18:39 PM - ====> cd_dense: ground: 63.0025, average loss: 63.0025
+01/23/2024 12:18:39 PM - Train 57/300, loss_ae: 19.988733, loss_cd: 52.587923, evaluate_cd_spares: 63.0025, evaluate_cd_dense: 63.0025 
+
+01/23/2024 12:21:07 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.8745, average loss: 63.8745
+01/23/2024 12:21:07 PM - ====> cd_dense: ground: 63.8745, average loss: 63.8745
+01/23/2024 12:21:07 PM - Train 58/300, loss_ae: 20.347643, loss_cd: 52.868492, evaluate_cd_spares: 63.0025, evaluate_cd_dense: 63.0025 
+
+01/23/2024 12:23:35 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.1439, average loss: 62.1439
+01/23/2024 12:23:35 PM - ====> cd_dense: ground: 62.1439, average loss: 62.1439
+01/23/2024 12:23:35 PM - Train 59/300, loss_ae: 19.479450, loss_cd: 52.186843, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:26:05 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.2269, average loss: 63.2269
+01/23/2024 12:26:05 PM - ====> cd_dense: ground: 63.2269, average loss: 63.2269
+01/23/2024 12:26:05 PM - Train 60/300, loss_ae: 19.785180, loss_cd: 51.809208, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:28:32 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.4679, average loss: 62.4679
+01/23/2024 12:28:32 PM - ====> cd_dense: ground: 62.4679, average loss: 62.4679
+01/23/2024 12:28:32 PM - Train 61/300, loss_ae: 19.613883, loss_cd: 51.956011, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:31:00 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.0915, average loss: 63.0915
+01/23/2024 12:31:00 PM - ====> cd_dense: ground: 63.0915, average loss: 63.0915
+01/23/2024 12:31:00 PM - Train 62/300, loss_ae: 19.631639, loss_cd: 52.360777, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:33:26 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.3352, average loss: 62.3352
+01/23/2024 12:33:26 PM - ====> cd_dense: ground: 62.3352, average loss: 62.3352
+01/23/2024 12:33:26 PM - Train 63/300, loss_ae: 19.629630, loss_cd: 52.069016, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:35:53 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.8216, average loss: 63.8216
+01/23/2024 12:35:53 PM - ====> cd_dense: ground: 63.8216, average loss: 63.8216
+01/23/2024 12:35:53 PM - Train 64/300, loss_ae: 19.817680, loss_cd: 52.266849, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:38:21 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.0255, average loss: 65.0255
+01/23/2024 12:38:21 PM - ====> cd_dense: ground: 65.0255, average loss: 65.0255
+01/23/2024 12:38:21 PM - Train 65/300, loss_ae: 20.147136, loss_cd: 52.537946, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:40:47 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.7288, average loss: 62.7288
+01/23/2024 12:40:47 PM - ====> cd_dense: ground: 62.7288, average loss: 62.7288
+01/23/2024 12:40:47 PM - Train 66/300, loss_ae: 20.944078, loss_cd: 53.394215, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:43:15 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.4439, average loss: 62.4439
+01/23/2024 12:43:15 PM - ====> cd_dense: ground: 62.4439, average loss: 62.4439
+01/23/2024 12:43:15 PM - Train 67/300, loss_ae: 19.298327, loss_cd: 51.789281, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:45:42 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.1498, average loss: 62.1498
+01/23/2024 12:45:42 PM - ====> cd_dense: ground: 62.1498, average loss: 62.1498
+01/23/2024 12:45:42 PM - Train 68/300, loss_ae: 18.718208, loss_cd: 51.226728, evaluate_cd_spares: 62.1439, evaluate_cd_dense: 62.1439 
+
+01/23/2024 12:48:09 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.9605, average loss: 61.9605
+01/23/2024 12:48:09 PM - ====> cd_dense: ground: 61.9605, average loss: 61.9605
+01/23/2024 12:48:09 PM - Train 69/300, loss_ae: 18.863849, loss_cd: 51.553236, evaluate_cd_spares: 61.9605, evaluate_cd_dense: 61.9605 
+
+01/23/2024 12:50:39 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.8030, average loss: 63.8030
+01/23/2024 12:50:39 PM - ====> cd_dense: ground: 63.8030, average loss: 63.8030
+01/23/2024 12:50:39 PM - Train 70/300, loss_ae: 18.670527, loss_cd: 50.682958, evaluate_cd_spares: 61.9605, evaluate_cd_dense: 61.9605 
+
+01/23/2024 12:53:06 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.1757, average loss: 64.1757
+01/23/2024 12:53:06 PM - ====> cd_dense: ground: 64.1757, average loss: 64.1757
+01/23/2024 12:53:06 PM - Train 71/300, loss_ae: 18.366300, loss_cd: 51.160302, evaluate_cd_spares: 61.9605, evaluate_cd_dense: 61.9605 
+
+01/23/2024 12:55:34 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.2919, average loss: 62.2919
+01/23/2024 12:55:34 PM - ====> cd_dense: ground: 62.2919, average loss: 62.2919
+01/23/2024 12:55:34 PM - Train 72/300, loss_ae: 18.134536, loss_cd: 51.562033, evaluate_cd_spares: 61.9605, evaluate_cd_dense: 61.9605 
+
+01/23/2024 12:58:01 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.3728, average loss: 62.3728
+01/23/2024 12:58:01 PM - ====> cd_dense: ground: 62.3728, average loss: 62.3728
+01/23/2024 12:58:01 PM - Train 73/300, loss_ae: 18.225344, loss_cd: 51.082140, evaluate_cd_spares: 61.9605, evaluate_cd_dense: 61.9605 
+
+01/23/2024 01:00:29 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.2646, average loss: 63.2646
+01/23/2024 01:00:29 PM - ====> cd_dense: ground: 63.2646, average loss: 63.2646
+01/23/2024 01:00:29 PM - Train 74/300, loss_ae: 18.256828, loss_cd: 51.244685, evaluate_cd_spares: 61.9605, evaluate_cd_dense: 61.9605 
+
+01/23/2024 01:02:57 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.9295, average loss: 61.9295
+01/23/2024 01:02:57 PM - ====> cd_dense: ground: 61.9295, average loss: 61.9295
+01/23/2024 01:02:57 PM - Train 75/300, loss_ae: 17.645571, loss_cd: 50.299199, evaluate_cd_spares: 61.9295, evaluate_cd_dense: 61.9295 
+
+01/23/2024 01:05:26 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.5220, average loss: 62.5220
+01/23/2024 01:05:26 PM - ====> cd_dense: ground: 62.5220, average loss: 62.5220
+01/23/2024 01:05:26 PM - Train 76/300, loss_ae: 17.923743, loss_cd: 50.408265, evaluate_cd_spares: 61.9295, evaluate_cd_dense: 61.9295 
+
+01/23/2024 01:07:53 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.9131, average loss: 61.9131
+01/23/2024 01:07:53 PM - ====> cd_dense: ground: 61.9131, average loss: 61.9131
+01/23/2024 01:07:53 PM - Train 77/300, loss_ae: 18.090217, loss_cd: 50.473023, evaluate_cd_spares: 61.9131, evaluate_cd_dense: 61.9131 
+
+01/23/2024 01:10:21 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.8886, average loss: 62.8886
+01/23/2024 01:10:21 PM - ====> cd_dense: ground: 62.8886, average loss: 62.8886
+01/23/2024 01:10:21 PM - Train 78/300, loss_ae: 17.333949, loss_cd: 49.744888, evaluate_cd_spares: 61.9131, evaluate_cd_dense: 61.9131 
+
+01/23/2024 01:12:52 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.8472, average loss: 60.8472
+01/23/2024 01:12:52 PM - ====> cd_dense: ground: 60.8472, average loss: 60.8472
+01/23/2024 01:12:52 PM - Train 79/300, loss_ae: 17.710720, loss_cd: 50.148601, evaluate_cd_spares: 60.8472, evaluate_cd_dense: 60.8472 
+
+01/23/2024 01:15:19 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.8006, average loss: 61.8006
+01/23/2024 01:15:19 PM - ====> cd_dense: ground: 61.8006, average loss: 61.8006
+01/23/2024 01:15:19 PM - Train 80/300, loss_ae: 17.722446, loss_cd: 50.311874, evaluate_cd_spares: 60.8472, evaluate_cd_dense: 60.8472 
+
+01/23/2024 01:17:46 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.9748, average loss: 59.9748
+01/23/2024 01:17:46 PM - ====> cd_dense: ground: 59.9748, average loss: 59.9748
+01/23/2024 01:17:46 PM - Train 81/300, loss_ae: 17.464587, loss_cd: 49.702657, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:20:16 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.7241, average loss: 60.7241
+01/23/2024 01:20:16 PM - ====> cd_dense: ground: 60.7241, average loss: 60.7241
+01/23/2024 01:20:16 PM - Train 82/300, loss_ae: 17.003725, loss_cd: 49.031308, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:22:43 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.7734, average loss: 60.7734
+01/23/2024 01:22:43 PM - ====> cd_dense: ground: 60.7734, average loss: 60.7734
+01/23/2024 01:22:43 PM - Train 83/300, loss_ae: 16.971750, loss_cd: 49.205123, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:25:09 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 75.3718, average loss: 75.3718
+01/23/2024 01:25:09 PM - ====> cd_dense: ground: 75.3718, average loss: 75.3718
+01/23/2024 01:25:09 PM - Train 84/300, loss_ae: 17.438729, loss_cd: 50.671482, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:27:36 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.6512, average loss: 62.6512
+01/23/2024 01:27:36 PM - ====> cd_dense: ground: 62.6512, average loss: 62.6512
+01/23/2024 01:27:36 PM - Train 85/300, loss_ae: 17.217227, loss_cd: 52.222719, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:30:03 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.4253, average loss: 61.4253
+01/23/2024 01:30:03 PM - ====> cd_dense: ground: 61.4253, average loss: 61.4253
+01/23/2024 01:30:03 PM - Train 86/300, loss_ae: 16.990314, loss_cd: 50.299067, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:32:30 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.1172, average loss: 62.1172
+01/23/2024 01:32:30 PM - ====> cd_dense: ground: 62.1172, average loss: 62.1172
+01/23/2024 01:32:30 PM - Train 87/300, loss_ae: 16.976832, loss_cd: 49.496633, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:34:57 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.8851, average loss: 62.8851
+01/23/2024 01:34:57 PM - ====> cd_dense: ground: 62.8851, average loss: 62.8851
+01/23/2024 01:34:57 PM - Train 88/300, loss_ae: 16.938861, loss_cd: 49.247355, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:37:24 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 64.2295, average loss: 64.2295
+01/23/2024 01:37:24 PM - ====> cd_dense: ground: 64.2295, average loss: 64.2295
+01/23/2024 01:37:24 PM - Train 89/300, loss_ae: 16.558700, loss_cd: 49.316044, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:39:52 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.6958, average loss: 61.6958
+01/23/2024 01:39:52 PM - ====> cd_dense: ground: 61.6958, average loss: 61.6958
+01/23/2024 01:39:52 PM - Train 90/300, loss_ae: 16.856228, loss_cd: 49.500359, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:42:19 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.9532, average loss: 62.9532
+01/23/2024 01:42:19 PM - ====> cd_dense: ground: 62.9532, average loss: 62.9532
+01/23/2024 01:42:19 PM - Train 91/300, loss_ae: 16.670723, loss_cd: 49.243074, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:44:46 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.0024, average loss: 61.0024
+01/23/2024 01:44:46 PM - ====> cd_dense: ground: 61.0024, average loss: 61.0024
+01/23/2024 01:44:46 PM - Train 92/300, loss_ae: 17.182243, loss_cd: 49.482027, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:47:13 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.8161, average loss: 65.8161
+01/23/2024 01:47:13 PM - ====> cd_dense: ground: 65.8161, average loss: 65.8161
+01/23/2024 01:47:13 PM - Train 93/300, loss_ae: 16.430316, loss_cd: 49.136601, evaluate_cd_spares: 59.9748, evaluate_cd_dense: 59.9748 
+
+01/23/2024 01:49:40 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.6181, average loss: 59.6181
+01/23/2024 01:49:40 PM - ====> cd_dense: ground: 59.6181, average loss: 59.6181
+01/23/2024 01:49:40 PM - Train 94/300, loss_ae: 16.562138, loss_cd: 50.381005, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 01:52:06 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.2939, average loss: 61.2939
+01/23/2024 01:52:06 PM - ====> cd_dense: ground: 61.2939, average loss: 61.2939
+01/23/2024 01:52:06 PM - Train 95/300, loss_ae: 16.399029, loss_cd: 48.877362, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 01:54:35 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 62.4152, average loss: 62.4152
+01/23/2024 01:54:35 PM - ====> cd_dense: ground: 62.4152, average loss: 62.4152
+01/23/2024 01:54:35 PM - Train 96/300, loss_ae: 16.318987, loss_cd: 48.741226, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 01:57:02 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.3895, average loss: 60.3895
+01/23/2024 01:57:02 PM - ====> cd_dense: ground: 60.3895, average loss: 60.3895
+01/23/2024 01:57:02 PM - Train 97/300, loss_ae: 16.246715, loss_cd: 48.585347, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 01:59:29 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.5411, average loss: 61.5411
+01/23/2024 01:59:29 PM - ====> cd_dense: ground: 61.5411, average loss: 61.5411
+01/23/2024 01:59:29 PM - Train 98/300, loss_ae: 16.093232, loss_cd: 48.187998, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:01:55 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.1968, average loss: 61.1968
+01/23/2024 02:01:55 PM - ====> cd_dense: ground: 61.1968, average loss: 61.1968
+01/23/2024 02:01:55 PM - Train 99/300, loss_ae: 16.448390, loss_cd: 48.447976, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:04:23 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.1698, average loss: 61.1698
+01/23/2024 02:04:23 PM - ====> cd_dense: ground: 61.1698, average loss: 61.1698
+01/23/2024 02:04:23 PM - Train 100/300, loss_ae: 16.168340, loss_cd: 48.085624, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:06:50 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.8311, average loss: 61.8311
+01/23/2024 02:06:50 PM - ====> cd_dense: ground: 61.8311, average loss: 61.8311
+01/23/2024 02:06:50 PM - Train 101/300, loss_ae: 16.984430, loss_cd: 48.539627, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:09:18 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 65.7440, average loss: 65.7440
+01/23/2024 02:09:18 PM - ====> cd_dense: ground: 65.7440, average loss: 65.7440
+01/23/2024 02:09:18 PM - Train 102/300, loss_ae: 18.764445, loss_cd: 50.700818, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:11:45 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.1805, average loss: 63.1805
+01/23/2024 02:11:45 PM - ====> cd_dense: ground: 63.1805, average loss: 63.1805
+01/23/2024 02:11:45 PM - Train 103/300, loss_ae: 17.420269, loss_cd: 50.302090, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:14:13 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.3879, average loss: 61.3879
+01/23/2024 02:14:13 PM - ====> cd_dense: ground: 61.3879, average loss: 61.3879
+01/23/2024 02:14:13 PM - Train 104/300, loss_ae: 16.257394, loss_cd: 48.828091, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:16:40 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.3304, average loss: 60.3304
+01/23/2024 02:16:40 PM - ====> cd_dense: ground: 60.3304, average loss: 60.3304
+01/23/2024 02:16:40 PM - Train 105/300, loss_ae: 15.534238, loss_cd: 47.790271, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:19:12 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.0328, average loss: 61.0328
+01/23/2024 02:19:12 PM - ====> cd_dense: ground: 61.0328, average loss: 61.0328
+01/23/2024 02:19:12 PM - Train 106/300, loss_ae: 15.835361, loss_cd: 47.779251, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:21:49 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.0917, average loss: 61.0917
+01/23/2024 02:21:49 PM - ====> cd_dense: ground: 61.0917, average loss: 61.0917
+01/23/2024 02:21:49 PM - Train 107/300, loss_ae: 15.370138, loss_cd: 47.451092, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:24:37 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.3777, average loss: 61.3777
+01/23/2024 02:24:37 PM - ====> cd_dense: ground: 61.3777, average loss: 61.3777
+01/23/2024 02:24:37 PM - Train 108/300, loss_ae: 15.052794, loss_cd: 47.364353, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:27:05 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.2345, average loss: 60.2345
+01/23/2024 02:27:05 PM - ====> cd_dense: ground: 60.2345, average loss: 60.2345
+01/23/2024 02:27:05 PM - Train 109/300, loss_ae: 14.993450, loss_cd: 47.240039, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:29:31 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.0810, average loss: 61.0810
+01/23/2024 02:29:31 PM - ====> cd_dense: ground: 61.0810, average loss: 61.0810
+01/23/2024 02:29:31 PM - Train 110/300, loss_ae: 15.143151, loss_cd: 47.103275, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:31:59 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.1731, average loss: 61.1731
+01/23/2024 02:31:59 PM - ====> cd_dense: ground: 61.1731, average loss: 61.1731
+01/23/2024 02:31:59 PM - Train 111/300, loss_ae: 15.183714, loss_cd: 47.161328, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:34:25 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.4608, average loss: 60.4608
+01/23/2024 02:34:25 PM - ====> cd_dense: ground: 60.4608, average loss: 60.4608
+01/23/2024 02:34:25 PM - Train 112/300, loss_ae: 15.461262, loss_cd: 47.346226, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:36:52 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.6912, average loss: 60.6912
+01/23/2024 02:36:52 PM - ====> cd_dense: ground: 60.6912, average loss: 60.6912
+01/23/2024 02:36:52 PM - Train 113/300, loss_ae: 15.404059, loss_cd: 46.931170, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:39:20 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.8637, average loss: 60.8637
+01/23/2024 02:39:20 PM - ====> cd_dense: ground: 60.8637, average loss: 60.8637
+01/23/2024 02:39:20 PM - Train 114/300, loss_ae: 14.989499, loss_cd: 47.256164, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:41:47 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.1298, average loss: 60.1298
+01/23/2024 02:41:47 PM - ====> cd_dense: ground: 60.1298, average loss: 60.1298
+01/23/2024 02:41:47 PM - Train 115/300, loss_ae: 15.023586, loss_cd: 46.768726, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:44:15 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.4652, average loss: 61.4652
+01/23/2024 02:44:15 PM - ====> cd_dense: ground: 61.4652, average loss: 61.4652
+01/23/2024 02:44:15 PM - Train 116/300, loss_ae: 14.909600, loss_cd: 46.823137, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:46:42 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.8653, average loss: 61.8653
+01/23/2024 02:46:42 PM - ====> cd_dense: ground: 61.8653, average loss: 61.8653
+01/23/2024 02:46:42 PM - Train 117/300, loss_ae: 14.855570, loss_cd: 46.868959, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:49:10 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.0612, average loss: 60.0612
+01/23/2024 02:49:10 PM - ====> cd_dense: ground: 60.0612, average loss: 60.0612
+01/23/2024 02:49:10 PM - Train 118/300, loss_ae: 15.031285, loss_cd: 46.461458, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:51:38 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.2276, average loss: 60.2276
+01/23/2024 02:51:38 PM - ====> cd_dense: ground: 60.2276, average loss: 60.2276
+01/23/2024 02:51:38 PM - Train 119/300, loss_ae: 15.767561, loss_cd: 47.567175, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:54:06 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.8482, average loss: 59.8482
+01/23/2024 02:54:06 PM - ====> cd_dense: ground: 59.8482, average loss: 59.8482
+01/23/2024 02:54:06 PM - Train 120/300, loss_ae: 15.196546, loss_cd: 46.730426, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:56:33 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.9525, average loss: 60.9525
+01/23/2024 02:56:33 PM - ====> cd_dense: ground: 60.9525, average loss: 60.9525
+01/23/2024 02:56:33 PM - Train 121/300, loss_ae: 15.314863, loss_cd: 47.423955, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 02:59:02 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.5901, average loss: 60.5901
+01/23/2024 02:59:02 PM - ====> cd_dense: ground: 60.5901, average loss: 60.5901
+01/23/2024 02:59:02 PM - Train 122/300, loss_ae: 14.744523, loss_cd: 46.865415, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 03:01:40 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.1545, average loss: 60.1545
+01/23/2024 03:01:40 PM - ====> cd_dense: ground: 60.1545, average loss: 60.1545
+01/23/2024 03:01:40 PM - Train 123/300, loss_ae: 14.804085, loss_cd: 46.177610, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 03:04:28 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.0993, average loss: 60.0993
+01/23/2024 03:04:28 PM - ====> cd_dense: ground: 60.0993, average loss: 60.0993
+01/23/2024 03:04:28 PM - Train 124/300, loss_ae: 14.442272, loss_cd: 45.955018, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 03:06:57 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.1474, average loss: 60.1474
+01/23/2024 03:06:57 PM - ====> cd_dense: ground: 60.1474, average loss: 60.1474
+01/23/2024 03:06:57 PM - Train 125/300, loss_ae: 14.730383, loss_cd: 46.815606, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 03:09:25 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.6465, average loss: 59.6465
+01/23/2024 03:09:25 PM - ====> cd_dense: ground: 59.6465, average loss: 59.6465
+01/23/2024 03:09:25 PM - Train 126/300, loss_ae: 14.619887, loss_cd: 46.536340, evaluate_cd_spares: 59.6181, evaluate_cd_dense: 59.6181 
+
+01/23/2024 03:11:51 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.2113, average loss: 59.2113
+01/23/2024 03:11:51 PM - ====> cd_dense: ground: 59.2113, average loss: 59.2113
+01/23/2024 03:11:51 PM - Train 127/300, loss_ae: 14.186764, loss_cd: 45.801038, evaluate_cd_spares: 59.2113, evaluate_cd_dense: 59.2113 
+
+01/23/2024 03:14:20 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.4295, average loss: 59.4295
+01/23/2024 03:14:20 PM - ====> cd_dense: ground: 59.4295, average loss: 59.4295
+01/23/2024 03:14:20 PM - Train 128/300, loss_ae: 14.606152, loss_cd: 46.181469, evaluate_cd_spares: 59.2113, evaluate_cd_dense: 59.2113 
+
+01/23/2024 03:16:46 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.4452, average loss: 60.4452
+01/23/2024 03:16:46 PM - ====> cd_dense: ground: 60.4452, average loss: 60.4452
+01/23/2024 03:16:46 PM - Train 129/300, loss_ae: 14.754973, loss_cd: 46.196530, evaluate_cd_spares: 59.2113, evaluate_cd_dense: 59.2113 
+
+01/23/2024 03:19:14 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.1901, average loss: 60.1901
+01/23/2024 03:19:14 PM - ====> cd_dense: ground: 60.1901, average loss: 60.1901
+01/23/2024 03:19:14 PM - Train 130/300, loss_ae: 14.376194, loss_cd: 46.178954, evaluate_cd_spares: 59.2113, evaluate_cd_dense: 59.2113 
+
+01/23/2024 03:21:41 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.7932, average loss: 59.7932
+01/23/2024 03:21:41 PM - ====> cd_dense: ground: 59.7932, average loss: 59.7932
+01/23/2024 03:21:41 PM - Train 131/300, loss_ae: 14.269567, loss_cd: 45.714128, evaluate_cd_spares: 59.2113, evaluate_cd_dense: 59.2113 
+
+01/23/2024 03:24:09 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.7229, average loss: 58.7229
+01/23/2024 03:24:09 PM - ====> cd_dense: ground: 58.7229, average loss: 58.7229
+01/23/2024 03:24:09 PM - Train 132/300, loss_ae: 14.328342, loss_cd: 45.513114, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:26:38 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.0033, average loss: 59.0033
+01/23/2024 03:26:38 PM - ====> cd_dense: ground: 59.0033, average loss: 59.0033
+01/23/2024 03:26:38 PM - Train 133/300, loss_ae: 14.448233, loss_cd: 45.741400, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:29:05 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.7299, average loss: 59.7299
+01/23/2024 03:29:05 PM - ====> cd_dense: ground: 59.7299, average loss: 59.7299
+01/23/2024 03:29:05 PM - Train 134/300, loss_ae: 14.243854, loss_cd: 45.711574, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:31:33 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.1843, average loss: 60.1843
+01/23/2024 03:31:33 PM - ====> cd_dense: ground: 60.1843, average loss: 60.1843
+01/23/2024 03:31:33 PM - Train 135/300, loss_ae: 14.099807, loss_cd: 45.524247, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:34:01 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.4169, average loss: 59.4169
+01/23/2024 03:34:01 PM - ====> cd_dense: ground: 59.4169, average loss: 59.4169
+01/23/2024 03:34:01 PM - Train 136/300, loss_ae: 13.961582, loss_cd: 45.344374, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:36:35 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.9185, average loss: 59.9185
+01/23/2024 03:36:35 PM - ====> cd_dense: ground: 59.9185, average loss: 59.9185
+01/23/2024 03:36:35 PM - Train 137/300, loss_ae: 13.872617, loss_cd: 45.115759, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:39:22 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.9383, average loss: 59.9383
+01/23/2024 03:39:22 PM - ====> cd_dense: ground: 59.9383, average loss: 59.9383
+01/23/2024 03:39:22 PM - Train 138/300, loss_ae: 14.102059, loss_cd: 45.843989, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:42:10 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.7446, average loss: 60.7446
+01/23/2024 03:42:10 PM - ====> cd_dense: ground: 60.7446, average loss: 60.7446
+01/23/2024 03:42:10 PM - Train 139/300, loss_ae: 13.629974, loss_cd: 45.596893, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:44:57 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.1641, average loss: 59.1641
+01/23/2024 03:44:57 PM - ====> cd_dense: ground: 59.1641, average loss: 59.1641
+01/23/2024 03:44:57 PM - Train 140/300, loss_ae: 13.946980, loss_cd: 45.385953, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:47:45 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.3253, average loss: 61.3253
+01/23/2024 03:47:45 PM - ====> cd_dense: ground: 61.3253, average loss: 61.3253
+01/23/2024 03:47:45 PM - Train 141/300, loss_ae: 13.803141, loss_cd: 45.069020, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:50:33 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.8404, average loss: 59.8404
+01/23/2024 03:50:33 PM - ====> cd_dense: ground: 59.8404, average loss: 59.8404
+01/23/2024 03:50:33 PM - Train 142/300, loss_ae: 13.785710, loss_cd: 44.657733, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:53:20 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.7194, average loss: 59.7194
+01/23/2024 03:53:20 PM - ====> cd_dense: ground: 59.7194, average loss: 59.7194
+01/23/2024 03:53:20 PM - Train 143/300, loss_ae: 13.755947, loss_cd: 45.105417, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:56:08 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.5175, average loss: 60.5175
+01/23/2024 03:56:08 PM - ====> cd_dense: ground: 60.5175, average loss: 60.5175
+01/23/2024 03:56:08 PM - Train 144/300, loss_ae: 15.171509, loss_cd: 46.281548, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 03:58:56 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.4643, average loss: 60.4643
+01/23/2024 03:58:56 PM - ====> cd_dense: ground: 60.4643, average loss: 60.4643
+01/23/2024 03:58:56 PM - Train 145/300, loss_ae: 15.041467, loss_cd: 46.194297, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:01:44 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.2303, average loss: 59.2303
+01/23/2024 04:01:44 PM - ====> cd_dense: ground: 59.2303, average loss: 59.2303
+01/23/2024 04:01:44 PM - Train 146/300, loss_ae: 14.235664, loss_cd: 45.181133, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:04:32 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.2793, average loss: 59.2793
+01/23/2024 04:04:32 PM - ====> cd_dense: ground: 59.2793, average loss: 59.2793
+01/23/2024 04:04:32 PM - Train 147/300, loss_ae: 13.832284, loss_cd: 45.001867, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:07:20 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.4337, average loss: 59.4337
+01/23/2024 04:07:20 PM - ====> cd_dense: ground: 59.4337, average loss: 59.4337
+01/23/2024 04:07:20 PM - Train 148/300, loss_ae: 13.781328, loss_cd: 44.874421, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:09:53 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.4152, average loss: 59.4152
+01/23/2024 04:09:53 PM - ====> cd_dense: ground: 59.4152, average loss: 59.4152
+01/23/2024 04:09:53 PM - Train 149/300, loss_ae: 13.608254, loss_cd: 44.723334, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:12:21 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.9763, average loss: 60.9763
+01/23/2024 04:12:21 PM - ====> cd_dense: ground: 60.9763, average loss: 60.9763
+01/23/2024 04:12:21 PM - Train 150/300, loss_ae: 13.133751, loss_cd: 44.128811, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:14:54 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.0674, average loss: 60.0674
+01/23/2024 04:14:54 PM - ====> cd_dense: ground: 60.0674, average loss: 60.0674
+01/23/2024 04:14:54 PM - Train 151/300, loss_ae: 13.430228, loss_cd: 44.369525, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:17:42 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.6108, average loss: 59.6108
+01/23/2024 04:17:42 PM - ====> cd_dense: ground: 59.6108, average loss: 59.6108
+01/23/2024 04:17:42 PM - Train 152/300, loss_ae: 13.269165, loss_cd: 43.897899, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:20:29 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.0162, average loss: 59.0162
+01/23/2024 04:20:29 PM - ====> cd_dense: ground: 59.0162, average loss: 59.0162
+01/23/2024 04:20:29 PM - Train 153/300, loss_ae: 13.277253, loss_cd: 44.254665, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:23:17 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.6555, average loss: 60.6555
+01/23/2024 04:23:17 PM - ====> cd_dense: ground: 60.6555, average loss: 60.6555
+01/23/2024 04:23:17 PM - Train 154/300, loss_ae: 13.178706, loss_cd: 44.294639, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:26:05 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.3888, average loss: 59.3888
+01/23/2024 04:26:05 PM - ====> cd_dense: ground: 59.3888, average loss: 59.3888
+01/23/2024 04:26:05 PM - Train 155/300, loss_ae: 13.135635, loss_cd: 44.066690, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:28:53 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.6576, average loss: 59.6576
+01/23/2024 04:28:53 PM - ====> cd_dense: ground: 59.6576, average loss: 59.6576
+01/23/2024 04:28:53 PM - Train 156/300, loss_ae: 13.297680, loss_cd: 44.291292, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:31:41 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 61.0749, average loss: 61.0749
+01/23/2024 04:31:41 PM - ====> cd_dense: ground: 61.0749, average loss: 61.0749
+01/23/2024 04:31:41 PM - Train 157/300, loss_ae: 13.301799, loss_cd: 44.209659, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:34:29 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.4025, average loss: 60.4025
+01/23/2024 04:34:29 PM - ====> cd_dense: ground: 60.4025, average loss: 60.4025
+01/23/2024 04:34:29 PM - Train 158/300, loss_ae: 13.414090, loss_cd: 44.671777, evaluate_cd_spares: 58.7229, evaluate_cd_dense: 58.7229 
+
+01/23/2024 04:37:17 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.6188, average loss: 58.6188
+01/23/2024 04:37:17 PM - ====> cd_dense: ground: 58.6188, average loss: 58.6188
+01/23/2024 04:37:17 PM - Train 159/300, loss_ae: 13.154042, loss_cd: 44.414716, evaluate_cd_spares: 58.6188, evaluate_cd_dense: 58.6188 
+
+01/23/2024 04:40:07 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.6317, average loss: 58.6317
+01/23/2024 04:40:07 PM - ====> cd_dense: ground: 58.6317, average loss: 58.6317
+01/23/2024 04:40:07 PM - Train 160/300, loss_ae: 13.933790, loss_cd: 44.851979, evaluate_cd_spares: 58.6188, evaluate_cd_dense: 58.6188 
+
+01/23/2024 04:42:55 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.7797, average loss: 59.7797
+01/23/2024 04:42:55 PM - ====> cd_dense: ground: 59.7797, average loss: 59.7797
+01/23/2024 04:42:55 PM - Train 161/300, loss_ae: 13.594180, loss_cd: 44.754795, evaluate_cd_spares: 58.6188, evaluate_cd_dense: 58.6188 
+
+01/23/2024 04:45:43 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.5469, average loss: 59.5469
+01/23/2024 04:45:43 PM - ====> cd_dense: ground: 59.5469, average loss: 59.5469
+01/23/2024 04:45:43 PM - Train 162/300, loss_ae: 13.253970, loss_cd: 44.134422, evaluate_cd_spares: 58.6188, evaluate_cd_dense: 58.6188 
+
+01/23/2024 04:48:30 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.3428, average loss: 59.3428
+01/23/2024 04:48:30 PM - ====> cd_dense: ground: 59.3428, average loss: 59.3428
+01/23/2024 04:48:30 PM - Train 163/300, loss_ae: 12.950498, loss_cd: 44.022951, evaluate_cd_spares: 58.6188, evaluate_cd_dense: 58.6188 
+
+01/23/2024 04:51:19 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.2920, average loss: 59.2920
+01/23/2024 04:51:19 PM - ====> cd_dense: ground: 59.2920, average loss: 59.2920
+01/23/2024 04:51:19 PM - Train 164/300, loss_ae: 12.902309, loss_cd: 44.040417, evaluate_cd_spares: 58.6188, evaluate_cd_dense: 58.6188 
+
+01/23/2024 04:54:07 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.1823, average loss: 59.1823
+01/23/2024 04:54:07 PM - ====> cd_dense: ground: 59.1823, average loss: 59.1823
+01/23/2024 04:54:07 PM - Train 165/300, loss_ae: 13.134229, loss_cd: 43.819157, evaluate_cd_spares: 58.6188, evaluate_cd_dense: 58.6188 
+
+01/23/2024 04:56:56 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.6888, average loss: 58.6888
+01/23/2024 04:56:56 PM - ====> cd_dense: ground: 58.6888, average loss: 58.6888
+01/23/2024 04:56:56 PM - Train 166/300, loss_ae: 13.017352, loss_cd: 43.986637, evaluate_cd_spares: 58.6188, evaluate_cd_dense: 58.6188 
+
+01/23/2024 04:59:33 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.7055, average loss: 57.7055
+01/23/2024 04:59:33 PM - ====> cd_dense: ground: 57.7055, average loss: 57.7055
+01/23/2024 04:59:33 PM - Train 167/300, loss_ae: 13.304139, loss_cd: 43.663478, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:02:03 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.9454, average loss: 57.9454
+01/23/2024 05:02:03 PM - ====> cd_dense: ground: 57.9454, average loss: 57.9454
+01/23/2024 05:02:03 PM - Train 168/300, loss_ae: 13.137955, loss_cd: 43.905389, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:04:30 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.1830, average loss: 58.1830
+01/23/2024 05:04:30 PM - ====> cd_dense: ground: 58.1830, average loss: 58.1830
+01/23/2024 05:04:30 PM - Train 169/300, loss_ae: 12.838424, loss_cd: 43.792908, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:07:01 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.1813, average loss: 59.1813
+01/23/2024 05:07:01 PM - ====> cd_dense: ground: 59.1813, average loss: 59.1813
+01/23/2024 05:07:01 PM - Train 170/300, loss_ae: 12.617009, loss_cd: 43.490516, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:09:42 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.8476, average loss: 58.8476
+01/23/2024 05:09:42 PM - ====> cd_dense: ground: 58.8476, average loss: 58.8476
+01/23/2024 05:09:42 PM - Train 171/300, loss_ae: 12.793856, loss_cd: 43.365104, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:12:30 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.7578, average loss: 57.7578
+01/23/2024 05:12:30 PM - ====> cd_dense: ground: 57.7578, average loss: 57.7578
+01/23/2024 05:12:30 PM - Train 172/300, loss_ae: 12.635588, loss_cd: 43.180144, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:15:18 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.0604, average loss: 59.0604
+01/23/2024 05:15:18 PM - ====> cd_dense: ground: 59.0604, average loss: 59.0604
+01/23/2024 05:15:18 PM - Train 173/300, loss_ae: 13.044082, loss_cd: 43.649595, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:18:06 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.0541, average loss: 58.0541
+01/23/2024 05:18:06 PM - ====> cd_dense: ground: 58.0541, average loss: 58.0541
+01/23/2024 05:18:06 PM - Train 174/300, loss_ae: 13.142360, loss_cd: 43.830120, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:20:53 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.5058, average loss: 58.5058
+01/23/2024 05:20:53 PM - ====> cd_dense: ground: 58.5058, average loss: 58.5058
+01/23/2024 05:20:53 PM - Train 175/300, loss_ae: 12.656843, loss_cd: 43.318037, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:23:22 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.5819, average loss: 59.5819
+01/23/2024 05:23:22 PM - ====> cd_dense: ground: 59.5819, average loss: 59.5819
+01/23/2024 05:23:22 PM - Train 176/300, loss_ae: 12.734459, loss_cd: 43.372507, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:25:49 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.3443, average loss: 60.3443
+01/23/2024 05:25:49 PM - ====> cd_dense: ground: 60.3443, average loss: 60.3443
+01/23/2024 05:25:49 PM - Train 177/300, loss_ae: 12.635782, loss_cd: 42.839506, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:28:16 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.2290, average loss: 59.2290
+01/23/2024 05:28:16 PM - ====> cd_dense: ground: 59.2290, average loss: 59.2290
+01/23/2024 05:28:16 PM - Train 178/300, loss_ae: 12.597766, loss_cd: 43.118956, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:30:44 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.8112, average loss: 58.8112
+01/23/2024 05:30:44 PM - ====> cd_dense: ground: 58.8112, average loss: 58.8112
+01/23/2024 05:30:44 PM - Train 179/300, loss_ae: 12.442733, loss_cd: 42.832040, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:33:11 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.3257, average loss: 58.3257
+01/23/2024 05:33:11 PM - ====> cd_dense: ground: 58.3257, average loss: 58.3257
+01/23/2024 05:33:11 PM - Train 180/300, loss_ae: 12.404065, loss_cd: 43.120703, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:35:39 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.0426, average loss: 58.0426
+01/23/2024 05:35:39 PM - ====> cd_dense: ground: 58.0426, average loss: 58.0426
+01/23/2024 05:35:39 PM - Train 181/300, loss_ae: 12.502006, loss_cd: 42.910280, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:38:06 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.7230, average loss: 57.7230
+01/23/2024 05:38:06 PM - ====> cd_dense: ground: 57.7230, average loss: 57.7230
+01/23/2024 05:38:06 PM - Train 182/300, loss_ae: 12.418946, loss_cd: 42.914193, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:40:34 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.0282, average loss: 59.0282
+01/23/2024 05:40:34 PM - ====> cd_dense: ground: 59.0282, average loss: 59.0282
+01/23/2024 05:40:34 PM - Train 183/300, loss_ae: 12.538425, loss_cd: 43.732830, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:43:02 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.7828, average loss: 59.7828
+01/23/2024 05:43:02 PM - ====> cd_dense: ground: 59.7828, average loss: 59.7828
+01/23/2024 05:43:02 PM - Train 184/300, loss_ae: 12.539669, loss_cd: 43.746174, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:45:29 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.5240, average loss: 59.5240
+01/23/2024 05:45:29 PM - ====> cd_dense: ground: 59.5240, average loss: 59.5240
+01/23/2024 05:45:29 PM - Train 185/300, loss_ae: 12.272820, loss_cd: 43.028717, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:47:57 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.7283, average loss: 58.7283
+01/23/2024 05:47:57 PM - ====> cd_dense: ground: 58.7283, average loss: 58.7283
+01/23/2024 05:47:57 PM - Train 186/300, loss_ae: 12.354546, loss_cd: 43.057612, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:50:24 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.7365, average loss: 57.7365
+01/23/2024 05:50:24 PM - ====> cd_dense: ground: 57.7365, average loss: 57.7365
+01/23/2024 05:50:24 PM - Train 187/300, loss_ae: 12.452778, loss_cd: 43.115013, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:52:51 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.7099, average loss: 58.7099
+01/23/2024 05:52:51 PM - ====> cd_dense: ground: 58.7099, average loss: 58.7099
+01/23/2024 05:52:51 PM - Train 188/300, loss_ae: 12.597801, loss_cd: 42.912913, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:55:18 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.7818, average loss: 58.7818
+01/23/2024 05:55:18 PM - ====> cd_dense: ground: 58.7818, average loss: 58.7818
+01/23/2024 05:55:18 PM - Train 189/300, loss_ae: 12.569355, loss_cd: 42.493079, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 05:57:46 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.5397, average loss: 58.5397
+01/23/2024 05:57:46 PM - ====> cd_dense: ground: 58.5397, average loss: 58.5397
+01/23/2024 05:57:46 PM - Train 190/300, loss_ae: 12.423888, loss_cd: 43.554935, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 06:00:12 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.1161, average loss: 59.1161
+01/23/2024 06:00:12 PM - ====> cd_dense: ground: 59.1161, average loss: 59.1161
+01/23/2024 06:00:12 PM - Train 191/300, loss_ae: 12.259397, loss_cd: 42.591865, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 06:02:39 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.6932, average loss: 58.6932
+01/23/2024 06:02:39 PM - ====> cd_dense: ground: 58.6932, average loss: 58.6932
+01/23/2024 06:02:39 PM - Train 192/300, loss_ae: 13.293875, loss_cd: 43.605448, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 06:05:06 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.9114, average loss: 58.9114
+01/23/2024 06:05:06 PM - ====> cd_dense: ground: 58.9114, average loss: 58.9114
+01/23/2024 06:05:06 PM - Train 193/300, loss_ae: 12.846963, loss_cd: 43.307667, evaluate_cd_spares: 57.7055, evaluate_cd_dense: 57.7055 
+
+01/23/2024 06:07:34 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.1892, average loss: 57.1892
+01/23/2024 06:07:34 PM - ====> cd_dense: ground: 57.1892, average loss: 57.1892
+01/23/2024 06:07:34 PM - Train 194/300, loss_ae: 12.358369, loss_cd: 43.027519, evaluate_cd_spares: 57.1892, evaluate_cd_dense: 57.1892 
+
+01/23/2024 06:10:04 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.0061, average loss: 58.0061
+01/23/2024 06:10:04 PM - ====> cd_dense: ground: 58.0061, average loss: 58.0061
+01/23/2024 06:10:04 PM - Train 195/300, loss_ae: 12.082686, loss_cd: 42.194092, evaluate_cd_spares: 57.1892, evaluate_cd_dense: 57.1892 
+
+01/23/2024 06:12:31 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.8347, average loss: 57.8347
+01/23/2024 06:12:31 PM - ====> cd_dense: ground: 57.8347, average loss: 57.8347
+01/23/2024 06:12:31 PM - Train 196/300, loss_ae: 11.775428, loss_cd: 41.964154, evaluate_cd_spares: 57.1892, evaluate_cd_dense: 57.1892 
+
+01/23/2024 06:14:58 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.8896, average loss: 58.8896
+01/23/2024 06:14:58 PM - ====> cd_dense: ground: 58.8896, average loss: 58.8896
+01/23/2024 06:14:58 PM - Train 197/300, loss_ae: 11.917914, loss_cd: 41.853989, evaluate_cd_spares: 57.1892, evaluate_cd_dense: 57.1892 
+
+01/23/2024 06:17:26 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.6411, average loss: 57.6411
+01/23/2024 06:17:26 PM - ====> cd_dense: ground: 57.6411, average loss: 57.6411
+01/23/2024 06:17:26 PM - Train 198/300, loss_ae: 13.208679, loss_cd: 43.053038, evaluate_cd_spares: 57.1892, evaluate_cd_dense: 57.1892 
+
+01/23/2024 06:19:53 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8410, average loss: 56.8410
+01/23/2024 06:19:53 PM - ====> cd_dense: ground: 56.8410, average loss: 56.8410
+01/23/2024 06:19:53 PM - Train 199/300, loss_ae: 12.092812, loss_cd: 42.110513, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:22:22 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.4044, average loss: 58.4044
+01/23/2024 06:22:22 PM - ====> cd_dense: ground: 58.4044, average loss: 58.4044
+01/23/2024 06:22:22 PM - Train 200/300, loss_ae: 11.971911, loss_cd: 42.141284, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:24:50 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.1946, average loss: 58.1946
+01/23/2024 06:24:50 PM - ====> cd_dense: ground: 58.1946, average loss: 58.1946
+01/23/2024 06:24:50 PM - Train 201/300, loss_ae: 11.766164, loss_cd: 41.792280, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:27:17 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.6116, average loss: 57.6116
+01/23/2024 06:27:17 PM - ====> cd_dense: ground: 57.6116, average loss: 57.6116
+01/23/2024 06:27:17 PM - Train 202/300, loss_ae: 11.819340, loss_cd: 41.781579, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:29:44 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.7106, average loss: 58.7106
+01/23/2024 06:29:44 PM - ====> cd_dense: ground: 58.7106, average loss: 58.7106
+01/23/2024 06:29:44 PM - Train 203/300, loss_ae: 11.814486, loss_cd: 41.681726, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:32:11 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.3736, average loss: 57.3736
+01/23/2024 06:32:11 PM - ====> cd_dense: ground: 57.3736, average loss: 57.3736
+01/23/2024 06:32:11 PM - Train 204/300, loss_ae: 11.808041, loss_cd: 41.897499, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:34:39 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.5261, average loss: 58.5261
+01/23/2024 06:34:39 PM - ====> cd_dense: ground: 58.5261, average loss: 58.5261
+01/23/2024 06:34:39 PM - Train 205/300, loss_ae: 11.626746, loss_cd: 41.415969, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:37:06 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.3593, average loss: 57.3593
+01/23/2024 06:37:06 PM - ====> cd_dense: ground: 57.3593, average loss: 57.3593
+01/23/2024 06:37:06 PM - Train 206/300, loss_ae: 11.751573, loss_cd: 41.656075, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:39:31 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8506, average loss: 56.8506
+01/23/2024 06:39:31 PM - ====> cd_dense: ground: 56.8506, average loss: 56.8506
+01/23/2024 06:39:31 PM - Train 207/300, loss_ae: 11.627479, loss_cd: 41.710664, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:41:55 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.6902, average loss: 57.6902
+01/23/2024 06:41:55 PM - ====> cd_dense: ground: 57.6902, average loss: 57.6902
+01/23/2024 06:41:55 PM - Train 208/300, loss_ae: 11.595297, loss_cd: 41.362180, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:44:21 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 63.3903, average loss: 63.3903
+01/23/2024 06:44:21 PM - ====> cd_dense: ground: 63.3903, average loss: 63.3903
+01/23/2024 06:44:21 PM - Train 209/300, loss_ae: 14.884826, loss_cd: 44.895099, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:46:46 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.3732, average loss: 59.3732
+01/23/2024 06:46:46 PM - ====> cd_dense: ground: 59.3732, average loss: 59.3732
+01/23/2024 06:46:46 PM - Train 210/300, loss_ae: 14.161806, loss_cd: 44.520351, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:49:11 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.3472, average loss: 59.3472
+01/23/2024 06:49:11 PM - ====> cd_dense: ground: 59.3472, average loss: 59.3472
+01/23/2024 06:49:11 PM - Train 211/300, loss_ae: 12.617056, loss_cd: 42.796065, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:51:35 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.9963, average loss: 58.9963
+01/23/2024 06:51:35 PM - ====> cd_dense: ground: 58.9963, average loss: 58.9963
+01/23/2024 06:51:35 PM - Train 212/300, loss_ae: 12.093823, loss_cd: 42.592248, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:54:00 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.2325, average loss: 58.2325
+01/23/2024 06:54:00 PM - ====> cd_dense: ground: 58.2325, average loss: 58.2325
+01/23/2024 06:54:00 PM - Train 213/300, loss_ae: 12.034002, loss_cd: 41.917176, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:56:24 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.7282, average loss: 57.7282
+01/23/2024 06:56:24 PM - ====> cd_dense: ground: 57.7282, average loss: 57.7282
+01/23/2024 06:56:24 PM - Train 214/300, loss_ae: 11.675027, loss_cd: 41.279281, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 06:58:49 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.6421, average loss: 57.6421
+01/23/2024 06:58:49 PM - ====> cd_dense: ground: 57.6421, average loss: 57.6421
+01/23/2024 06:58:49 PM - Train 215/300, loss_ae: 11.464688, loss_cd: 41.196325, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:01:14 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.4160, average loss: 57.4160
+01/23/2024 07:01:14 PM - ====> cd_dense: ground: 57.4160, average loss: 57.4160
+01/23/2024 07:01:14 PM - Train 216/300, loss_ae: 11.295666, loss_cd: 41.243660, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:03:39 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.0730, average loss: 57.0730
+01/23/2024 07:03:39 PM - ====> cd_dense: ground: 57.0730, average loss: 57.0730
+01/23/2024 07:03:39 PM - Train 217/300, loss_ae: 11.269735, loss_cd: 41.255134, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:06:03 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.6229, average loss: 57.6229
+01/23/2024 07:06:03 PM - ====> cd_dense: ground: 57.6229, average loss: 57.6229
+01/23/2024 07:06:03 PM - Train 218/300, loss_ae: 11.459602, loss_cd: 40.957397, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:08:28 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.2272, average loss: 57.2272
+01/23/2024 07:08:28 PM - ====> cd_dense: ground: 57.2272, average loss: 57.2272
+01/23/2024 07:08:28 PM - Train 219/300, loss_ae: 11.977159, loss_cd: 41.410125, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:10:53 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.8639, average loss: 57.8639
+01/23/2024 07:10:53 PM - ====> cd_dense: ground: 57.8639, average loss: 57.8639
+01/23/2024 07:10:53 PM - Train 220/300, loss_ae: 11.383549, loss_cd: 41.154161, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:13:17 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.8567, average loss: 57.8567
+01/23/2024 07:13:17 PM - ====> cd_dense: ground: 57.8567, average loss: 57.8567
+01/23/2024 07:13:17 PM - Train 221/300, loss_ae: 11.228184, loss_cd: 41.070886, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:15:42 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.4038, average loss: 58.4038
+01/23/2024 07:15:42 PM - ====> cd_dense: ground: 58.4038, average loss: 58.4038
+01/23/2024 07:15:42 PM - Train 222/300, loss_ae: 11.287487, loss_cd: 40.843655, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:18:07 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.9202, average loss: 57.9202
+01/23/2024 07:18:07 PM - ====> cd_dense: ground: 57.9202, average loss: 57.9202
+01/23/2024 07:18:07 PM - Train 223/300, loss_ae: 11.220199, loss_cd: 40.950455, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:20:32 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.0398, average loss: 58.0398
+01/23/2024 07:20:32 PM - ====> cd_dense: ground: 58.0398, average loss: 58.0398
+01/23/2024 07:20:32 PM - Train 224/300, loss_ae: 11.198430, loss_cd: 40.738834, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:22:57 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.3594, average loss: 57.3594
+01/23/2024 07:22:57 PM - ====> cd_dense: ground: 57.3594, average loss: 57.3594
+01/23/2024 07:22:57 PM - Train 225/300, loss_ae: 11.337160, loss_cd: 40.770183, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:25:22 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.5418, average loss: 57.5418
+01/23/2024 07:25:22 PM - ====> cd_dense: ground: 57.5418, average loss: 57.5418
+01/23/2024 07:25:22 PM - Train 226/300, loss_ae: 11.049810, loss_cd: 40.651633, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:27:47 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.4525, average loss: 57.4525
+01/23/2024 07:27:47 PM - ====> cd_dense: ground: 57.4525, average loss: 57.4525
+01/23/2024 07:27:47 PM - Train 227/300, loss_ae: 11.232516, loss_cd: 40.726840, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:30:12 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.5425, average loss: 57.5425
+01/23/2024 07:30:12 PM - ====> cd_dense: ground: 57.5425, average loss: 57.5425
+01/23/2024 07:30:12 PM - Train 228/300, loss_ae: 11.201314, loss_cd: 40.920089, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:32:37 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.6397, average loss: 58.6397
+01/23/2024 07:32:37 PM - ====> cd_dense: ground: 58.6397, average loss: 58.6397
+01/23/2024 07:32:37 PM - Train 229/300, loss_ae: 11.199350, loss_cd: 40.989547, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:35:02 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.6232, average loss: 58.6232
+01/23/2024 07:35:02 PM - ====> cd_dense: ground: 58.6232, average loss: 58.6232
+01/23/2024 07:35:02 PM - Train 230/300, loss_ae: 11.244361, loss_cd: 40.669401, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:37:27 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.1329, average loss: 58.1329
+01/23/2024 07:37:27 PM - ====> cd_dense: ground: 58.1329, average loss: 58.1329
+01/23/2024 07:37:27 PM - Train 231/300, loss_ae: 11.199272, loss_cd: 40.900694, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:39:52 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.2071, average loss: 58.2071
+01/23/2024 07:39:52 PM - ====> cd_dense: ground: 58.2071, average loss: 58.2071
+01/23/2024 07:39:52 PM - Train 232/300, loss_ae: 11.288374, loss_cd: 40.855648, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:42:17 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8999, average loss: 56.8999
+01/23/2024 07:42:17 PM - ====> cd_dense: ground: 56.8999, average loss: 56.8999
+01/23/2024 07:42:17 PM - Train 233/300, loss_ae: 11.140395, loss_cd: 40.834084, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:44:42 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.8086, average loss: 57.8086
+01/23/2024 07:44:42 PM - ====> cd_dense: ground: 57.8086, average loss: 57.8086
+01/23/2024 07:44:42 PM - Train 234/300, loss_ae: 11.111219, loss_cd: 40.695158, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:47:06 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.8343, average loss: 57.8343
+01/23/2024 07:47:06 PM - ====> cd_dense: ground: 57.8343, average loss: 57.8343
+01/23/2024 07:47:06 PM - Train 235/300, loss_ae: 11.165741, loss_cd: 40.749887, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:49:31 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.3756, average loss: 58.3756
+01/23/2024 07:49:31 PM - ====> cd_dense: ground: 58.3756, average loss: 58.3756
+01/23/2024 07:49:31 PM - Train 236/300, loss_ae: 11.127785, loss_cd: 40.823087, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:51:57 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.1869, average loss: 58.1869
+01/23/2024 07:51:57 PM - ====> cd_dense: ground: 58.1869, average loss: 58.1869
+01/23/2024 07:51:57 PM - Train 237/300, loss_ae: 11.217747, loss_cd: 40.509237, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:54:22 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.6594, average loss: 58.6594
+01/23/2024 07:54:22 PM - ====> cd_dense: ground: 58.6594, average loss: 58.6594
+01/23/2024 07:54:22 PM - Train 238/300, loss_ae: 11.259653, loss_cd: 40.673767, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:56:46 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.8351, average loss: 57.8351
+01/23/2024 07:56:46 PM - ====> cd_dense: ground: 57.8351, average loss: 57.8351
+01/23/2024 07:56:46 PM - Train 239/300, loss_ae: 11.225634, loss_cd: 40.628913, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 07:59:10 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.2329, average loss: 57.2329
+01/23/2024 07:59:10 PM - ====> cd_dense: ground: 57.2329, average loss: 57.2329
+01/23/2024 07:59:10 PM - Train 240/300, loss_ae: 11.089479, loss_cd: 40.399419, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 08:01:35 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.5729, average loss: 58.5729
+01/23/2024 08:01:35 PM - ====> cd_dense: ground: 58.5729, average loss: 58.5729
+01/23/2024 08:01:35 PM - Train 241/300, loss_ae: 11.001537, loss_cd: 40.278977, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 08:04:00 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.9134, average loss: 57.9134
+01/23/2024 08:04:00 PM - ====> cd_dense: ground: 57.9134, average loss: 57.9134
+01/23/2024 08:04:00 PM - Train 242/300, loss_ae: 11.286448, loss_cd: 40.671610, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 08:06:25 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.3617, average loss: 57.3617
+01/23/2024 08:06:25 PM - ====> cd_dense: ground: 57.3617, average loss: 57.3617
+01/23/2024 08:06:25 PM - Train 243/300, loss_ae: 11.932259, loss_cd: 40.998459, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 08:08:50 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.4652, average loss: 57.4652
+01/23/2024 08:08:50 PM - ====> cd_dense: ground: 57.4652, average loss: 57.4652
+01/23/2024 08:08:50 PM - Train 244/300, loss_ae: 11.774441, loss_cd: 40.863368, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 08:11:15 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.4113, average loss: 57.4113
+01/23/2024 08:11:15 PM - ====> cd_dense: ground: 57.4113, average loss: 57.4113
+01/23/2024 08:11:15 PM - Train 245/300, loss_ae: 11.147854, loss_cd: 40.531734, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 08:13:39 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.5820, average loss: 57.5820
+01/23/2024 08:13:39 PM - ====> cd_dense: ground: 57.5820, average loss: 57.5820
+01/23/2024 08:13:39 PM - Train 246/300, loss_ae: 10.997560, loss_cd: 39.801727, evaluate_cd_spares: 56.8410, evaluate_cd_dense: 56.8410 
+
+01/23/2024 08:16:04 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.7227, average loss: 56.7227
+01/23/2024 08:16:04 PM - ====> cd_dense: ground: 56.7227, average loss: 56.7227
+01/23/2024 08:16:04 PM - Train 247/300, loss_ae: 10.904319, loss_cd: 40.085806, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:18:30 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8737, average loss: 56.8737
+01/23/2024 08:18:30 PM - ====> cd_dense: ground: 56.8737, average loss: 56.8737
+01/23/2024 08:18:30 PM - Train 248/300, loss_ae: 11.015858, loss_cd: 40.410893, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:20:55 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.3258, average loss: 57.3258
+01/23/2024 08:20:55 PM - ====> cd_dense: ground: 57.3258, average loss: 57.3258
+01/23/2024 08:20:55 PM - Train 249/300, loss_ae: 10.773515, loss_cd: 40.278121, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:23:21 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 60.0688, average loss: 60.0688
+01/23/2024 08:23:21 PM - ====> cd_dense: ground: 60.0688, average loss: 60.0688
+01/23/2024 08:23:21 PM - Train 250/300, loss_ae: 10.962549, loss_cd: 40.333646, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:25:46 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.8067, average loss: 57.8067
+01/23/2024 08:25:46 PM - ====> cd_dense: ground: 57.8067, average loss: 57.8067
+01/23/2024 08:25:46 PM - Train 251/300, loss_ae: 11.081534, loss_cd: 41.011674, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:28:12 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.3652, average loss: 58.3652
+01/23/2024 08:28:12 PM - ====> cd_dense: ground: 58.3652, average loss: 58.3652
+01/23/2024 08:28:12 PM - Train 252/300, loss_ae: 11.130602, loss_cd: 40.666560, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:30:36 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.6853, average loss: 59.6853
+01/23/2024 08:30:36 PM - ====> cd_dense: ground: 59.6853, average loss: 59.6853
+01/23/2024 08:30:36 PM - Train 253/300, loss_ae: 12.155976, loss_cd: 45.014467, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:33:01 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.4282, average loss: 58.4282
+01/23/2024 08:33:01 PM - ====> cd_dense: ground: 58.4282, average loss: 58.4282
+01/23/2024 08:33:01 PM - Train 254/300, loss_ae: 11.243881, loss_cd: 42.043655, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:35:26 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.7386, average loss: 57.7386
+01/23/2024 08:35:26 PM - ====> cd_dense: ground: 57.7386, average loss: 57.7386
+01/23/2024 08:35:26 PM - Train 255/300, loss_ae: 11.488151, loss_cd: 41.637764, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:37:51 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8436, average loss: 56.8436
+01/23/2024 08:37:51 PM - ====> cd_dense: ground: 56.8436, average loss: 56.8436
+01/23/2024 08:37:51 PM - Train 256/300, loss_ae: 11.031457, loss_cd: 40.890926, evaluate_cd_spares: 56.7227, evaluate_cd_dense: 56.7227 
+
+01/23/2024 08:40:16 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.7124, average loss: 56.7124
+01/23/2024 08:40:16 PM - ====> cd_dense: ground: 56.7124, average loss: 56.7124
+01/23/2024 08:40:16 PM - Train 257/300, loss_ae: 10.757218, loss_cd: 40.586588, evaluate_cd_spares: 56.7124, evaluate_cd_dense: 56.7124 
+
+01/23/2024 08:42:41 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8623, average loss: 56.8623
+01/23/2024 08:42:41 PM - ====> cd_dense: ground: 56.8623, average loss: 56.8623
+01/23/2024 08:42:41 PM - Train 258/300, loss_ae: 10.659679, loss_cd: 39.796638, evaluate_cd_spares: 56.7124, evaluate_cd_dense: 56.7124 
+
+01/23/2024 08:45:07 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.6136, average loss: 57.6136
+01/23/2024 08:45:07 PM - ====> cd_dense: ground: 57.6136, average loss: 57.6136
+01/23/2024 08:45:07 PM - Train 259/300, loss_ae: 10.536622, loss_cd: 40.021217, evaluate_cd_spares: 56.7124, evaluate_cd_dense: 56.7124 
+
+01/23/2024 08:47:33 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8417, average loss: 56.8417
+01/23/2024 08:47:33 PM - ====> cd_dense: ground: 56.8417, average loss: 56.8417
+01/23/2024 08:47:33 PM - Train 260/300, loss_ae: 10.397947, loss_cd: 39.665612, evaluate_cd_spares: 56.7124, evaluate_cd_dense: 56.7124 
+
+01/23/2024 08:49:58 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.3089, average loss: 56.3089
+01/23/2024 08:49:58 PM - ====> cd_dense: ground: 56.3089, average loss: 56.3089
+01/23/2024 08:49:58 PM - Train 261/300, loss_ae: 10.514313, loss_cd: 39.474855, evaluate_cd_spares: 56.3089, evaluate_cd_dense: 56.3089 
+
+01/23/2024 08:52:25 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.2288, average loss: 58.2288
+01/23/2024 08:52:25 PM - ====> cd_dense: ground: 58.2288, average loss: 58.2288
+01/23/2024 08:52:25 PM - Train 262/300, loss_ae: 10.554220, loss_cd: 39.586295, evaluate_cd_spares: 56.3089, evaluate_cd_dense: 56.3089 
+
+01/23/2024 08:54:50 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.2857, average loss: 57.2857
+01/23/2024 08:54:50 PM - ====> cd_dense: ground: 57.2857, average loss: 57.2857
+01/23/2024 08:54:50 PM - Train 263/300, loss_ae: 10.434300, loss_cd: 39.708579, evaluate_cd_spares: 56.3089, evaluate_cd_dense: 56.3089 
+
+01/23/2024 08:57:15 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.3329, average loss: 56.3329
+01/23/2024 08:57:15 PM - ====> cd_dense: ground: 56.3329, average loss: 56.3329
+01/23/2024 08:57:15 PM - Train 264/300, loss_ae: 10.570311, loss_cd: 39.748742, evaluate_cd_spares: 56.3089, evaluate_cd_dense: 56.3089 
+
+01/23/2024 08:59:40 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.5732, average loss: 57.5732
+01/23/2024 08:59:40 PM - ====> cd_dense: ground: 57.5732, average loss: 57.5732
+01/23/2024 08:59:40 PM - Train 265/300, loss_ae: 12.093878, loss_cd: 41.044666, evaluate_cd_spares: 56.3089, evaluate_cd_dense: 56.3089 
+
+01/23/2024 09:02:05 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.2703, average loss: 58.2703
+01/23/2024 09:02:05 PM - ====> cd_dense: ground: 58.2703, average loss: 58.2703
+01/23/2024 09:02:05 PM - Train 266/300, loss_ae: 11.567097, loss_cd: 40.591786, evaluate_cd_spares: 56.3089, evaluate_cd_dense: 56.3089 
+
+01/23/2024 09:04:30 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 58.3672, average loss: 58.3672
+01/23/2024 09:04:30 PM - ====> cd_dense: ground: 58.3672, average loss: 58.3672
+01/23/2024 09:04:30 PM - Train 267/300, loss_ae: 11.478748, loss_cd: 40.366647, evaluate_cd_spares: 56.3089, evaluate_cd_dense: 56.3089 
+
+01/23/2024 09:06:54 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 55.9892, average loss: 55.9892
+01/23/2024 09:06:54 PM - ====> cd_dense: ground: 55.9892, average loss: 55.9892
+01/23/2024 09:06:54 PM - Train 268/300, loss_ae: 11.005225, loss_cd: 39.718568, evaluate_cd_spares: 55.9892, evaluate_cd_dense: 55.9892 
+
+01/23/2024 09:09:19 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.3399, average loss: 56.3399
+01/23/2024 09:09:19 PM - ====> cd_dense: ground: 56.3399, average loss: 56.3399
+01/23/2024 09:09:19 PM - Train 269/300, loss_ae: 10.622411, loss_cd: 39.374308, evaluate_cd_spares: 55.9892, evaluate_cd_dense: 55.9892 
+
+01/23/2024 09:11:45 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.7062, average loss: 57.7062
+01/23/2024 09:11:45 PM - ====> cd_dense: ground: 57.7062, average loss: 57.7062
+01/23/2024 09:11:45 PM - Train 270/300, loss_ae: 10.575511, loss_cd: 39.427819, evaluate_cd_spares: 55.9892, evaluate_cd_dense: 55.9892 
+
+01/23/2024 09:14:10 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.3903, average loss: 56.3903
+01/23/2024 09:14:10 PM - ====> cd_dense: ground: 56.3903, average loss: 56.3903
+01/23/2024 09:14:10 PM - Train 271/300, loss_ae: 10.750825, loss_cd: 39.659870, evaluate_cd_spares: 55.9892, evaluate_cd_dense: 55.9892 
+
+01/23/2024 09:16:36 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 55.9496, average loss: 55.9496
+01/23/2024 09:16:36 PM - ====> cd_dense: ground: 55.9496, average loss: 55.9496
+01/23/2024 09:16:36 PM - Train 272/300, loss_ae: 10.483223, loss_cd: 39.569407, evaluate_cd_spares: 55.9496, evaluate_cd_dense: 55.9496 
+
+01/23/2024 09:19:01 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.2500, average loss: 56.2500
+01/23/2024 09:19:01 PM - ====> cd_dense: ground: 56.2500, average loss: 56.2500
+01/23/2024 09:19:01 PM - Train 273/300, loss_ae: 10.351835, loss_cd: 39.258150, evaluate_cd_spares: 55.9496, evaluate_cd_dense: 55.9496 
+
+01/23/2024 09:21:27 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.5553, average loss: 56.5553
+01/23/2024 09:21:27 PM - ====> cd_dense: ground: 56.5553, average loss: 56.5553
+01/23/2024 09:21:27 PM - Train 274/300, loss_ae: 10.127836, loss_cd: 39.197433, evaluate_cd_spares: 55.9496, evaluate_cd_dense: 55.9496 
+
+01/23/2024 09:23:51 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.1405, average loss: 56.1405
+01/23/2024 09:23:51 PM - ====> cd_dense: ground: 56.1405, average loss: 56.1405
+01/23/2024 09:23:51 PM - Train 275/300, loss_ae: 10.310960, loss_cd: 38.977074, evaluate_cd_spares: 55.9496, evaluate_cd_dense: 55.9496 
+
+01/23/2024 09:26:17 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.5323, average loss: 57.5323
+01/23/2024 09:26:17 PM - ====> cd_dense: ground: 57.5323, average loss: 57.5323
+01/23/2024 09:26:17 PM - Train 276/300, loss_ae: 10.132572, loss_cd: 38.437896, evaluate_cd_spares: 55.9496, evaluate_cd_dense: 55.9496 
+
+01/23/2024 09:28:42 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8565, average loss: 56.8565
+01/23/2024 09:28:42 PM - ====> cd_dense: ground: 56.8565, average loss: 56.8565
+01/23/2024 09:28:42 PM - Train 277/300, loss_ae: 10.327161, loss_cd: 39.050609, evaluate_cd_spares: 55.9496, evaluate_cd_dense: 55.9496 
+
+01/23/2024 09:31:07 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.8873, average loss: 56.8873
+01/23/2024 09:31:07 PM - ====> cd_dense: ground: 56.8873, average loss: 56.8873
+01/23/2024 09:31:07 PM - Train 278/300, loss_ae: 10.258595, loss_cd: 39.139690, evaluate_cd_spares: 55.9496, evaluate_cd_dense: 55.9496 
+
+01/23/2024 09:33:32 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 55.6426, average loss: 55.6426
+01/23/2024 09:33:32 PM - ====> cd_dense: ground: 55.6426, average loss: 55.6426
+01/23/2024 09:33:32 PM - Train 279/300, loss_ae: 10.352941, loss_cd: 39.052558, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:35:58 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.6814, average loss: 56.6814
+01/23/2024 09:35:58 PM - ====> cd_dense: ground: 56.6814, average loss: 56.6814
+01/23/2024 09:35:58 PM - Train 280/300, loss_ae: 10.111445, loss_cd: 38.734877, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:38:23 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.9603, average loss: 56.9603
+01/23/2024 09:38:23 PM - ====> cd_dense: ground: 56.9603, average loss: 56.9603
+01/23/2024 09:38:23 PM - Train 281/300, loss_ae: 10.156485, loss_cd: 38.788077, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:40:49 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.2209, average loss: 57.2209
+01/23/2024 09:40:49 PM - ====> cd_dense: ground: 57.2209, average loss: 57.2209
+01/23/2024 09:40:49 PM - Train 282/300, loss_ae: 11.285908, loss_cd: 39.966438, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:43:13 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.6704, average loss: 57.6704
+01/23/2024 09:43:13 PM - ====> cd_dense: ground: 57.6704, average loss: 57.6704
+01/23/2024 09:43:13 PM - Train 283/300, loss_ae: 10.642459, loss_cd: 39.182967, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:45:39 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.9956, average loss: 56.9956
+01/23/2024 09:45:39 PM - ====> cd_dense: ground: 56.9956, average loss: 56.9956
+01/23/2024 09:45:39 PM - Train 284/300, loss_ae: 10.507981, loss_cd: 39.382841, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:48:03 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.3801, average loss: 57.3801
+01/23/2024 09:48:03 PM - ====> cd_dense: ground: 57.3801, average loss: 57.3801
+01/23/2024 09:48:03 PM - Train 285/300, loss_ae: 10.300231, loss_cd: 38.796102, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:50:29 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 59.9047, average loss: 59.9047
+01/23/2024 09:50:29 PM - ====> cd_dense: ground: 59.9047, average loss: 59.9047
+01/23/2024 09:50:29 PM - Train 286/300, loss_ae: 11.344104, loss_cd: 39.926603, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:52:53 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.9020, average loss: 56.9020
+01/23/2024 09:52:53 PM - ====> cd_dense: ground: 56.9020, average loss: 56.9020
+01/23/2024 09:52:53 PM - Train 287/300, loss_ae: 11.080511, loss_cd: 39.614704, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:55:18 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.9430, average loss: 56.9430
+01/23/2024 09:55:18 PM - ====> cd_dense: ground: 56.9430, average loss: 56.9430
+01/23/2024 09:55:18 PM - Train 288/300, loss_ae: 10.359218, loss_cd: 39.265769, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 09:57:43 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.0514, average loss: 57.0514
+01/23/2024 09:57:43 PM - ====> cd_dense: ground: 57.0514, average loss: 57.0514
+01/23/2024 09:57:43 PM - Train 289/300, loss_ae: 10.174872, loss_cd: 38.957418, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 10:00:08 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.3460, average loss: 57.3460
+01/23/2024 10:00:08 PM - ====> cd_dense: ground: 57.3460, average loss: 57.3460
+01/23/2024 10:00:08 PM - Train 290/300, loss_ae: 10.155651, loss_cd: 38.682239, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 10:02:33 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 57.0877, average loss: 57.0877
+01/23/2024 10:02:33 PM - ====> cd_dense: ground: 57.0877, average loss: 57.0877
+01/23/2024 10:02:33 PM - Train 291/300, loss_ae: 10.007462, loss_cd: 38.532608, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 10:04:59 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 55.9831, average loss: 55.9831
+01/23/2024 10:04:59 PM - ====> cd_dense: ground: 55.9831, average loss: 55.9831
+01/23/2024 10:04:59 PM - Train 292/300, loss_ae: 9.957235, loss_cd: 38.430211, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 10:07:23 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.2639, average loss: 56.2639
+01/23/2024 10:07:23 PM - ====> cd_dense: ground: 56.2639, average loss: 56.2639
+01/23/2024 10:07:23 PM - Train 293/300, loss_ae: 9.990003, loss_cd: 38.588288, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 10:09:48 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.2798, average loss: 56.2798
+01/23/2024 10:09:48 PM - ====> cd_dense: ground: 56.2798, average loss: 56.2798
+01/23/2024 10:09:48 PM - Train 294/300, loss_ae: 10.087753, loss_cd: 38.530193, evaluate_cd_spares: 55.6426, evaluate_cd_dense: 55.6426 
+
+01/23/2024 10:12:14 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 55.0030, average loss: 55.0030
+01/23/2024 10:12:14 PM - ====> cd_dense: ground: 55.0030, average loss: 55.0030
+01/23/2024 10:12:14 PM - Train 295/300, loss_ae: 10.113291, loss_cd: 38.689598, evaluate_cd_spares: 55.0030, evaluate_cd_dense: 55.0030 
+
+01/23/2024 10:14:41 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.6198, average loss: 56.6198
+01/23/2024 10:14:41 PM - ====> cd_dense: ground: 56.6198, average loss: 56.6198
+01/23/2024 10:14:41 PM - Train 296/300, loss_ae: 10.102954, loss_cd: 38.635405, evaluate_cd_spares: 55.0030, evaluate_cd_dense: 55.0030 
+
+01/23/2024 10:17:05 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.4248, average loss: 56.4248
+01/23/2024 10:17:05 PM - ====> cd_dense: ground: 56.4248, average loss: 56.4248
+01/23/2024 10:17:05 PM - Train 297/300, loss_ae: 10.092328, loss_cd: 38.503687, evaluate_cd_spares: 55.0030, evaluate_cd_dense: 55.0030 
+
+01/23/2024 10:19:30 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 56.7530, average loss: 56.7530
+01/23/2024 10:19:30 PM - ====> cd_dense: ground: 56.7530, average loss: 56.7530
+01/23/2024 10:19:30 PM - Train 298/300, loss_ae: 9.952459, loss_cd: 38.224444, evaluate_cd_spares: 55.0030, evaluate_cd_dense: 55.0030 
+
+01/23/2024 10:21:55 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 55.7978, average loss: 55.7978
+01/23/2024 10:21:55 PM - ====> cd_dense: ground: 55.7978, average loss: 55.7978
+01/23/2024 10:21:55 PM - Train 299/300, loss_ae: 10.009836, loss_cd: 38.046271, evaluate_cd_spares: 55.0030, evaluate_cd_dense: 55.0030 
+
+01/23/2024 10:22:17 PM - No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: 55.7978, average loss: 55.7978
+01/23/2024 10:22:17 PM - ====> cd_dense: ground: 55.7978, average loss: 55.7978
