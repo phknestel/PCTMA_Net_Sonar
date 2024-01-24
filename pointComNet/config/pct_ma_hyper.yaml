@@ -1,26 +1,26 @@
-Num_Encoder: 4
-num_head: 8
+Num_Encoder: 6
+num_head: 12
 dropout: 0.1
-d_ff: 2048
-d_model: 1024
+d_ff: 2400
+d_model: 1200
 src_vocab: 3
 tgt_vocab: 2048
 epochs: 300
 De_numpoints: 2048
 #De_channels: [ 128,256, 512, 1024, 2048 ]
-En_channels: [ 1024 ]
-De_channels: [ 1024, 2048, 2048 ]
+En_channels: [ 1200, 1200 ]
+De_channels: [ 1200, 2400, 2400 ]
 train_pt: False
 train_gt: False
 train_pt_to_gt: True
 use_emd: True
-use_cd: True # was false
+use_cd: False # was false
 use_consistence: False
 use_dgcnn: False
 use_cmlp: False
 w_cd: 10000
 w_emd: 0.00001
-n_primitives: 32
+n_primitives: 48
 gene_file: True #was false
 down_sampling: False
 combined_pc: True

@@ -54,7 +54,7 @@ class PCTMA_Net(nn.Module):
         self.use_emd = self.parameter["use_emd"]
 
         self.Logger.INFO(
-            "No_Floor datasets, Pre_train, Hyperparameter, Denoise ---> use_cd: %r, use_emd: %r, combined_pc: %r, ppd_loss: %r, down_sampling: %r, use_consistence: %r, n_primitives: %r, use_atlas: %r, gen_file: %r",
+            "All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ---> use_cd: %r, use_emd: %r, combined_pc: %r, ppd_loss: %r, down_sampling: %r, use_consistence: %r, n_primitives: %r, use_atlas: %r, gen_file: %r",
             self.parameter["use_cd"],
             self.parameter["use_emd"],
             self.parameter["combined_pc"],
@@ -290,11 +290,11 @@ class PCTMA_Net(nn.Module):
         evaluate_class_choice_dense = {"ground": []}
         count = 0.0
         if self.parameter["gene_file"]:
-            save_ply_path = os.path.join(os.path.dirname(__file__), "../../denoise_pretrain_hyper_nofloor_test")
+            save_ply_path = os.path.join(os.path.dirname(__file__), "../../alldataset_noPretrain_noHyper_noDenoise")
             make_dirs(save_ply_path)
             if check_point_name is not None:
                 check_point_base_name = check_point_name.split(".")
-                save_ply_path = os.path.join(os.path.dirname(__file__), "../../denoise__pretrain_hyper_nofloor_test",
+                save_ply_path = os.path.join(os.path.dirname(__file__), "../../alldataset_noPretrain_noHyper_noDenoise",
                                              check_point_base_name[0])
                 make_dirs(save_ply_path)
             count_k = 0
@@ -349,7 +349,7 @@ class PCTMA_Net(nn.Module):
                 evaluate_class_choice_dense[key] = sum(item) / len(item)
 
         # Correct usage of logging with string formatting
-        formatted_message_sparse = 'No_Floor datasets, Pre_train, Hyperparameter, Denoise ====> cd_sparse: ground: %.4f, average loss: %.4f' % (
+        formatted_message_sparse = 'All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: %.4f, average loss: %.4f' % (
             evaluate_class_choice_sparse["ground"] * 10000,
             sum(evaluate_loss_sparse) / len(evaluate_loss_sparse) * 10000
         )
