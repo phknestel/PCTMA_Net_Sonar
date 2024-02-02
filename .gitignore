@@ -17,6 +17,7 @@ denoise_hyper_nofloor/
 denoise_pretrain_hyper_nofloor_test/
 alldataset_noPretrain_noHyper_noDenoise/
 alldataset_noPretrain_noHyper_noDenoise_delInput/
+denoise_hyper_floor_delInput/
 save_ae_ply_hyper_pre_data/
 data/dataset2019/
 data/Workspace_data
