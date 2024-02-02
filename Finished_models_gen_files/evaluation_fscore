@@ -10,36 +10,28 @@ csv_results_dir = "csv_results/"
 distance_threshold = 0.02  # Assuming meters, equivalent to 20 mm
 results = []
 
-def compute_bidirectional_fscore(source_points, target_points, threshold):
+def compute_precision_recall_fscore(gt_points, completed_points, threshold):
     # Build KD-trees for both point clouds
-    source_tree = KDTree(source_points)
-    target_tree = KDTree(target_points)
+    gt_tree = KDTree(gt_points)
+    completed_tree = KDTree(completed_points)
     
-    # Query for closest points
-    _, idx_source_to_target = source_tree.query(target_points, k=1, distance_upper_bound=threshold)
-    _, idx_target_to_source = target_tree.query(source_points, k=1, distance_upper_bound=threshold)
+    # Query closest points to compute precision for completed to GT
+    _, indices = completed_tree.query(gt_points, k=1)
+    distances, _ = gt_tree.query(completed_points[indices], k=1)
+    precision = np.mean(distances <= threshold)
     
-    # Calculate precision and recall
-    precision_source_to_target = np.sum(idx_target_to_source != np.inf) / len(source_points)
-    recall_source_to_target = np.sum(idx_source_to_target != np.inf) / len(target_points)
+    # Query closest points to compute recall for GT to completed
+    _, indices = gt_tree.query(completed_points, k=1)
+    distances, _ = completed_tree.query(gt_points[indices], k=1)
+    recall = np.mean(distances <= threshold)
     
-    # F-Score for source to target
-    if precision_source_to_target + recall_source_to_target > 0:
-        fscore_source_to_target = 2 * (precision_source_to_target * recall_source_to_target) / (precision_source_to_target + recall_source_to_target)
+    # Compute F-Score
+    if precision + recall > 0:
+        fscore = 2 * (precision * recall) / (precision + recall)
     else:
-        fscore_source_to_target = 0
+        fscore = 0
     
-    # Swap roles for target to source
-    precision_target_to_source = np.sum(idx_source_to_target != np.inf) / len(target_points)
-    recall_target_to_source = np.sum(idx_target_to_source != np.inf) / len(source_points)
-    
-    # F-Score for target to source
-    if precision_target_to_source + recall_target_to_source > 0:
-        fscore_target_to_source = 2 * (precision_target_to_source * recall_target_to_source) / (precision_target_to_source + recall_target_to_source)
-    else:
-        fscore_target_to_source = 0
-    
-    return fscore_source_to_target * 100, fscore_target_to_source * 100
+    return precision * 100, recall * 100, fscore * 100  # Convert to percentages
 
 # Ensure the CSV results directory exists
 os.makedirs(csv_results_dir, exist_ok=True)
@@ -49,9 +41,6 @@ for base_name in os.listdir(output_dir):
         gt_file = os.path.join(output_dir, base_name)
         completed_file = os.path.join(output_dir, f"{base_name.split('_gt')[0]}_pc_recon_denoised.ply")
 
-        # Print statement indicating which files are being compared
-        print(f"Comparing GT file: {gt_file} with completed file: {completed_file} and vice versa")
-
         # Load point clouds
         gt_cloud = o3d.io.read_point_cloud(gt_file)
         completed_cloud = o3d.io.read_point_cloud(completed_file)
@@ -60,31 +49,28 @@ for base_name in os.listdir(output_dir):
         gt_points = np.asarray(gt_cloud.points)
         completed_points = np.asarray(completed_cloud.points)
 
-        # Compute bidirectional F-Score
-        fscore_gt_to_completed, fscore_completed_to_gt = compute_bidirectional_fscore(gt_points, completed_points, distance_threshold)
+        # Compute precision, recall, and F-Score
+        precision, recall, fscore = compute_precision_recall_fscore(gt_points, completed_points, distance_threshold)
         
         # Store the results
         results.append({
             "base_name": base_name,
-            "Fscore_GT_to_Completed": fscore_gt_to_completed,
-            "Fscore_Completed_to_GT": fscore_completed_to_gt
+            "Precision": precision,
+            "Recall": recall,
+            "Fscore": fscore
         })
 
 # Convert results to a DataFrame and calculate means
 df = pd.DataFrame(results)
-mean_fscore_gt_to_completed = df["Fscore_GT_to_Completed"].mean()
-mean_fscore_completed_to_gt = df["Fscore_Completed_to_GT"].mean()
+mean_precision = df["Precision"].mean()
+mean_recall = df["Recall"].mean()
+mean_fscore = df["Fscore"].mean()
 
 # Append means to the DataFrame
-mean_row = pd.DataFrame([{
-    "base_name": "mean_fscore",
-    "Fscore_GT_to_Completed": mean_fscore_gt_to_completed,
-    "Fscore_Completed_to_GT": mean_fscore_completed_to_gt
-}])
-df = pd.concat([df, mean_row], ignore_index=True)
+df = df.append({"base_name": "mean_metrics", "Precision": mean_precision, "Recall": mean_recall, "Fscore": mean_fscore}, ignore_index=True)
 
-# Save the DataFrame with bidirectional F-Scores to a CSV file
-results_filename = f"point_cloud_bidirectional_fscore_results_{output_dir}.csv"
+# Save the DataFrame with metrics to a CSV file
+results_filename = f"point_cloud_evaluation_metrics_results_{output_dir}.csv"
 df.to_csv(os.path.join(csv_results_dir, results_filename), index=False)
 
-print(f"Completed. Bidirectional F-Score results, including means, are saved in the CSV file: {results_filename}.")
+print(f"Completed. Evaluation metrics, including means, are saved in the CSV file: {results_filename}.")
