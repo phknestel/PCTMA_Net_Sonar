@@ -1,0 +1,63 @@
+import os
+import numpy as np
+import pandas as pd
+import open3d as o3d
+from scipy.spatial import cKDTree as KDTree
+
+# Parameters
+output_dir = "denoise_hyper_floor_delInput"
+csv_results_dir = "csv_results/"
+distance_threshold = 0.02  # Assuming meters, equivalent to 20 mm
+results = []
+
+def compute_point_proximity_percentage(gt_points, completed_points, threshold):
+    # Build a KD-tree for the completed points
+    completed_tree = KDTree(completed_points)
+    
+    # Query this tree for each point in GT to find if there's a point within the threshold
+    distances, _ = completed_tree.query(gt_points, k=1)
+    
+    # Calculate the percentage of GT points having a corresponding point in completed within the threshold
+    within_threshold_percentage = np.sum(distances <= threshold) / len(gt_points) * 100
+    return within_threshold_percentage
+
+# Ensure the CSV results directory exists
+os.makedirs(csv_results_dir, exist_ok=True)
+
+for base_name in os.listdir(output_dir):
+    if base_name.endswith("_gt.ply"):
+        gt_file = os.path.join(output_dir, base_name)
+        completed_file = os.path.join(output_dir, f"{base_name.split('_gt')[0]}_pc_recon_denoised.ply")
+
+        # Print statement indicating which files are being compared
+        print(f"Comparing GT file: {gt_file} with completed file: {completed_file}")
+
+        # Load point clouds
+        gt_cloud = o3d.io.read_point_cloud(gt_file)
+        completed_cloud = o3d.io.read_point_cloud(completed_file)
+
+        # Convert Open3D PointClouds to numpy arrays
+        gt_points = np.asarray(gt_cloud.points)
+        completed_points = np.asarray(completed_cloud.points)
+
+        # Compute Point Proximity Percentage
+        proximity_percentage = compute_point_proximity_percentage(gt_points, completed_points, distance_threshold)
+        
+        # Store the results
+        results.append({
+            "base_name": base_name,
+            "Point_Proximity_Percentage": proximity_percentage
+        })
+
+# Convert results to a DataFrame and calculate the mean percentage
+df = pd.DataFrame(results)
+mean_proximity_percentage = df["Point_Proximity_Percentage"].mean()
+
+# Append mean to the DataFrame
+df = df.append({"base_name": "mean_point_proximity_percentage", "Point_Proximity_Percentage": mean_proximity_percentage}, ignore_index=True)
+
+# Save the DataFrame with Point Proximity Percentages to a CSV file
+results_filename = f"point_cloud_point_proximity_percentage_results_{output_dir}.csv"
+df.to_csv(os.path.join(csv_results_dir, results_filename), index=False)
+
+print(f"Completed. Point Proximity Percentage results, including the mean, are saved in the CSV file: {results_filename}.")
