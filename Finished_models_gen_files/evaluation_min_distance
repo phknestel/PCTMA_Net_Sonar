@@ -1,0 +1,53 @@
+import os
+import numpy as np
+import pandas as pd
+import open3d as o3d
+from scipy.spatial import KDTree
+
+# Parameters
+output_dir = "denoise_hyper_floor_delInput/"
+csv_results_dir = "csv_results/"
+distance_threshold = 2.0  # in mm
+results = []
+
+def compute_one_way_percentage_metric(gt_points, completed_points, threshold):
+    # Build a KD-tree for the completed points
+    tree = KDTree(completed_points)
+    # Query this tree for each point in GT to find the closest point in the completed point cloud
+    distances, _ = tree.query(gt_points)
+    # Calculate the percentage of points within the threshold
+    within_threshold = np.sum(distances <= threshold) / len(gt_points)
+    return within_threshold * 100  # percentage
+
+# Ensure the CSV results directory exists
+os.makedirs(csv_results_dir, exist_ok=True)
+
+for base_name in os.listdir(output_dir):
+    if base_name.endswith("_gt.ply"):
+        gt_file = os.path.join(output_dir, base_name)
+        completed_file = os.path.join(output_dir, f"{base_name.split('_gt')[0]}_pc_recon_denoised.ply")
+
+        # Load point clouds
+        gt_cloud = o3d.io.read_point_cloud(gt_file)
+        completed_cloud = o3d.io.read_point_cloud(completed_file)
+
+        # Convert Open3D PointClouds to numpy arrays
+        gt_points = np.asarray(gt_cloud.points)
+        completed_points = np.asarray(completed_cloud.points)
+
+        # Compute the percentage metric
+        percentage_within_threshold = compute_one_way_percentage_metric(gt_points, completed_points, distance_threshold)
+        
+        # Store the result
+        results.append({"base_name": base_name, "percentage_within_threshold": percentage_within_threshold})
+
+# Convert results to a DataFrame and save as CSV
+df = pd.DataFrame(results)
+df.to_csv(os.path.join(csv_results_dir, "point_cloud_comparison_results.csv"), index=False)
+
+# Calculate and save the mean percentage
+mean_percentage = df["percentage_within_threshold"].mean()
+mean_df = pd.DataFrame([{"mean_percentage_within_threshold": mean_percentage}])
+mean_df.to_csv(os.path.join(csv_results_dir, "mean_percentage_results.csv"), index=False)
+
+print("Completed. Results and mean percentage are saved in the CSV files.")

@@ -69,8 +69,8 @@ def process_directory(input_dir, output_dir):
         base_name = os.path.basename(input_file).replace('_pc.ply', '')
         output_file = os.path.join(input_dir, f'{base_name}_pc_recon.ply')
         ground_truth_file = os.path.join(input_dir, f'{base_name}_gt.ply')
-        result_file = os.path.join(output_dir, f'ground_{base_name}_pc_recon_denoised.ply')
-        gt_output_file = os.path.join(output_dir, f'ground_{base_name}_gt.ply')
+        result_file = os.path.join(output_dir, f'{base_name}_pc_recon_denoised.ply')
+        gt_output_file = os.path.join(output_dir, f'{base_name}_gt.ply')
 
         # Process each set of files
         remove_input_points_from_output(input_file, output_file, result_file)
