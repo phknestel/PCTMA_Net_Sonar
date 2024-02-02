@@ -5,7 +5,7 @@ import open3d as o3d
 from scipy.spatial import cKDTree as KDTree
 
 # Parameters
-output_dir = "denoise_hyper_floor_delInput"
+output_dir = "alldataset_noPretrain_noHyper_noDenoise_delInput"
 csv_results_dir = "csv_results/"
 results = []
 
