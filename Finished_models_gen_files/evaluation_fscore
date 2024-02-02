@@ -5,7 +5,7 @@ import open3d as o3d
 from scipy.spatial import KDTree
 
 # Parameters
-output_dir = "alldataset_noPretrain_noHyper_noDenoise_delInput"
+output_dir = "denoise_hyper_floor_delInput"
 csv_results_dir = "csv_results/"
 distance_threshold = 0.02  # Assuming meters, equivalent to 20 mm
 results = []
@@ -15,15 +15,14 @@ def compute_precision_recall_fscore(gt_points, completed_points, threshold):
     gt_tree = KDTree(gt_points)
     completed_tree = KDTree(completed_points)
     
-    # Query closest points to compute precision for completed to GT
-    _, indices = completed_tree.query(gt_points, k=1)
-    distances, _ = gt_tree.query(completed_points[indices], k=1)
+    # Query for closest points to compute precision
+    distances, _ = completed_tree.query(gt_points, k=1)
     precision = np.mean(distances <= threshold)
-    
-    # Query closest points to compute recall for GT to completed
-    _, indices = gt_tree.query(completed_points, k=1)
-    distances, _ = completed_tree.query(gt_points[indices], k=1)
+
+    # Query for closest points to compute recall
+    distances, _ = gt_tree.query(completed_points, k=1)
     recall = np.mean(distances <= threshold)
+
     
     # Compute F-Score
     if precision + recall > 0:
@@ -70,7 +69,7 @@ mean_fscore = df["Fscore"].mean()
 df = df.append({"base_name": "mean_metrics", "Precision": mean_precision, "Recall": mean_recall, "Fscore": mean_fscore}, ignore_index=True)
 
 # Save the DataFrame with metrics to a CSV file
-results_filename = f"point_cloud_evaluation_metrics_results_{output_dir}.csv"
+results_filename = f"point_cloud_fscore_results_{output_dir}.csv"
 df.to_csv(os.path.join(csv_results_dir, results_filename), index=False)
 
 print(f"Completed. Evaluation metrics, including means, are saved in the CSV file: {results_filename}.")
