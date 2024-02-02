@@ -10,13 +10,13 @@ csv_results_dir = "csv_results/"
 distance_threshold = 0.02  # Assuming meters, equivalent to 20 mm
 results = []
 
-def compute_one_way_percentage_metric(gt_points, completed_points, threshold):
-    # Build a KD-tree for the completed points
-    tree = KDTree(completed_points)
-    # Query this tree for each point in GT to find the closest point in the completed point cloud
-    distances, _ = tree.query(gt_points, k=1)  # Ensure k=1 for closest point
+def compute_percentage_metric(source_points, target_points, threshold):
+    # Build a KD-tree for the target points
+    tree = KDTree(target_points)
+    # Query this tree for each point in source to find the closest point in target
+    distances, _ = tree.query(source_points, k=1)  # Ensure k=1 for closest point
     # Calculate the percentage of points within the threshold
-    within_threshold = np.sum(distances <= threshold) / len(gt_points)
+    within_threshold = np.sum(distances <= threshold) / len(source_points)
     return within_threshold * 100  # percentage
 
 # Ensure the CSV results directory exists
@@ -28,7 +28,7 @@ for base_name in os.listdir(output_dir):
         completed_file = os.path.join(output_dir, f"{base_name.split('_gt')[0]}_pc_recon_denoised.ply")
 
         # Print statement indicating which files are being compared
-        print(f"Comparing GT file: {gt_file} with completed file: {completed_file}")
+        print(f"Comparing completed file: {completed_file} with GT file: {gt_file} and vice versa")
 
         # Load point clouds
         gt_cloud = o3d.io.read_point_cloud(gt_file)
@@ -38,22 +38,32 @@ for base_name in os.listdir(output_dir):
         gt_points = np.asarray(gt_cloud.points)
         completed_points = np.asarray(completed_cloud.points)
 
-        # Compute the percentage metric
-        percentage_within_threshold = compute_one_way_percentage_metric(gt_points, completed_points, distance_threshold)
+        # Compute the percentage metrics for both directions
+        gt_to_completed_percentage = compute_percentage_metric(gt_points, completed_points, distance_threshold)
+        completed_to_gt_percentage = compute_percentage_metric(completed_points, gt_points, distance_threshold)
         
         # Store the result
-        results.append({"base_name": base_name, "percentage_within_threshold": percentage_within_threshold})
+        results.append({
+            "base_name": base_name, 
+            "GT_to_Completed_Percentage": gt_to_completed_percentage,
+            "Completed_to_GT_Percentage": completed_to_gt_percentage
+        })
 
 # Convert results to a DataFrame
 df = pd.DataFrame(results)
 
-# Calculate the mean percentage and append it to the DataFrame
-mean_percentage = df["percentage_within_threshold"].mean()
-mean_row = pd.DataFrame([{"base_name": "mean_percentage_within_threshold", "percentage_within_threshold": mean_percentage}])
+# Calculate the mean percentages for both directions and append them to the DataFrame
+mean_gt_to_completed = df["GT_to_Completed_Percentage"].mean()
+mean_completed_to_gt = df["Completed_to_GT_Percentage"].mean()
+mean_row = pd.DataFrame([{
+    "base_name": "mean_percentages", 
+    "GT_to_Completed_Percentage": mean_gt_to_completed,
+    "Completed_to_GT_Percentage": mean_completed_to_gt
+}])
 df = pd.concat([df, mean_row], ignore_index=True)
 
-# Save the DataFrame with the mean percentage to a CSV file
-results_filename = f"point_cloud_comparison_results_{output_dir}.csv"
+# Save the DataFrame to a CSV file
+results_filename = f"point_cloud_bidirectional_comparison_results_{output_dir}.csv"
 df.to_csv(os.path.join(csv_results_dir, results_filename), index=False)
 
-print(f"Completed. Results, including the mean percentage, are saved in the CSV file: {results_filename}.")
+print(f"Completed. Bidirectional comparison results, including mean percentages, are saved in the CSV file: {results_filename}.")
