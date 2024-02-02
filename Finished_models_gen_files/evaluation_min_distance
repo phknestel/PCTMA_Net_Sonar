@@ -5,7 +5,7 @@ import open3d as o3d
 from scipy.spatial import KDTree
 
 # Parameters
-output_dir = "denoise_hyper_floor_delInput/"
+output_dir = "denoise_hyper_floor_delInput"
 csv_results_dir = "csv_results/"
 distance_threshold = 2.0  # in mm
 results = []
@@ -43,7 +43,8 @@ for base_name in os.listdir(output_dir):
 
 # Convert results to a DataFrame and save as CSV
 df = pd.DataFrame(results)
-df.to_csv(os.path.join(csv_results_dir, "point_cloud_comparison_results.csv"), index=False)
+results_filename = f"point_cloud_comparison_results_{output_dir}.csv"
+df.to_csv(os.path.join(csv_results_dir, results_filename), index=False)
 
 # Calculate and save the mean percentage
 mean_percentage = df["percentage_within_threshold"].mean()

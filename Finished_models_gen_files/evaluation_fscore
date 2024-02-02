@@ -1,0 +1,78 @@
+import os
+import numpy as np
+import pandas as pd
+import open3d as o3d
+from scipy.spatial import KDTree
+
+# Parameters
+output_dir = "denoise_hyper_floor_delInput"
+csv_results_dir = "csv_results/"
+distance_threshold = 2.0  # in mm
+results = []
+
+# Extract the base name of the output directory to include in the CSV filenames
+output_dir_name = os.path.basename(os.path.normpath(output_dir))
+
+def compute_precision_recall_fscore(gt_points, completed_points, threshold):
+    # Build KD-trees for both point clouds
+    gt_tree = KDTree(gt_points)
+    completed_tree = KDTree(completed_points)
+    
+    # Query closest points for each point cloud in the other point cloud
+    distances_gt_to_completed, _ = gt_tree.query(completed_points)
+    distances_completed_to_gt, _ = completed_tree.query(gt_points)
+    
+    # Calculate precision and recall
+    precision = np.sum(distances_gt_to_completed <= threshold) / len(completed_points)
+    recall = np.sum(distances_completed_to_gt <= threshold) / len(gt_points)
+    
+    # Calculate F-Score
+    if precision + recall > 0:
+        fscore = 2 * (precision * recall) / (precision + recall)
+    else:
+        fscore = 0
+    
+    return precision * 100, recall * 100, fscore  # Convert to percentages
+
+# Ensure the CSV results directory exists
+os.makedirs(csv_results_dir, exist_ok=True)
+
+for base_name in os.listdir(output_dir):
+    if base_name.endswith("_gt.ply"):
+        gt_file = os.path.join(output_dir, base_name)
+        completed_file = os.path.join(output_dir, f"{base_name.split('_gt')[0]}_pc_recon_denoised.ply")
+
+        # Print statement indicating which files are being compared
+        print(f"Comparing GT file: {gt_file} with completed file: {completed_file}")
+
+        # Load point clouds
+        gt_cloud = o3d.io.read_point_cloud(gt_file)
+        completed_cloud = o3d.io.read_point_cloud(completed_file)
+
+        # Convert Open3D PointClouds to numpy arrays
+        gt_points = np.asarray(gt_cloud.points)
+        completed_points = np.asarray(completed_cloud.points)
+
+        # Compute precision, recall, and F-Score
+        precision, recall, fscore = compute_precision_recall_fscore(gt_points, completed_points, distance_threshold)
+        
+        # Store the results
+        results.append({
+            "base_name": base_name,
+            "precision": precision,
+            "recall": recall,
+            "fscore": fscore
+        })
+
+# Convert results to a DataFrame and save as CSV
+df = pd.DataFrame(results)
+results_filename = f"point_cloud_fscore_results_{output_dir_name}.csv"
+df.to_csv(os.path.join(csv_results_dir, results_filename), index=False)
+
+# Calculate and save the mean F-Score
+mean_fscore = df["fscore"].mean()
+mean_results_filename = f"mean_fscore_results_{output_dir_name}.csv"
+mean_df = pd.DataFrame([{"mean_fscore": mean_fscore}])
+mean_df.to_csv(os.path.join(csv_results_dir, mean_results_filename), index=False)
+
+print(f"Completed. F-Score results and mean are saved in the CSV files: {results_filename} and {mean_results_filename}.")

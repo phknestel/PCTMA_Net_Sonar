@@ -78,8 +78,8 @@ def process_directory(input_dir, output_dir):
         # Copy the ground truth file to the output directory with the new naming convention
         shutil.copy(ground_truth_file, gt_output_file)
 
-input_dir = 'denoise_hyper_floor/'
-output_dir = 'denoise_hyper_floor_delInput/'
+input_dir = 'alldataset_noPretrain_noHyper_noDenoise/'
+output_dir = 'alldataset_noPretrain_noHyper_noDenoise_delInput/'
 process_directory(input_dir, output_dir)
 
 
