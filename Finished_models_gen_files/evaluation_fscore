@@ -7,7 +7,7 @@ from scipy.spatial import KDTree
 # Parameters
 output_dir = "denoise_hyper_floor_delInput"
 csv_results_dir = "csv_results/"
-distance_threshold = 2.0  # in mm
+distance_threshold = 0.02  # Adjusted to meters, equivalent to 20 mm
 results = []
 
 # Extract the base name of the output directory to include in the CSV filenames
@@ -19,8 +19,8 @@ def compute_precision_recall_fscore(gt_points, completed_points, threshold):
     completed_tree = KDTree(completed_points)
     
     # Query closest points for each point cloud in the other point cloud
-    distances_gt_to_completed, _ = gt_tree.query(completed_points)
-    distances_completed_to_gt, _ = completed_tree.query(gt_points)
+    distances_gt_to_completed, _ = gt_tree.query(completed_points, k=1)
+    distances_completed_to_gt, _ = completed_tree.query(gt_points, k=1)
     
     # Calculate precision and recall
     precision = np.sum(distances_gt_to_completed <= threshold) / len(completed_points)
@@ -64,15 +64,16 @@ for base_name in os.listdir(output_dir):
             "fscore": fscore
         })
 
-# Convert results to a DataFrame and save as CSV
+# Convert results to a DataFrame
 df = pd.DataFrame(results)
+
+# Calculate the mean F-Score and append it to the DataFrame
+mean_fscore = df["fscore"].mean()
+mean_row = pd.DataFrame([{"base_name": "mean_fscore", "precision": np.nan, "recall": np.nan, "fscore": mean_fscore}])
+df = pd.concat([df, mean_row], ignore_index=True)
+
+# Save the DataFrame with the mean F-Score to a CSV file
 results_filename = f"point_cloud_fscore_results_{output_dir_name}.csv"
 df.to_csv(os.path.join(csv_results_dir, results_filename), index=False)
 
-# Calculate and save the mean F-Score
-mean_fscore = df["fscore"].mean()
-mean_results_filename = f"mean_fscore_results_{output_dir_name}.csv"
-mean_df = pd.DataFrame([{"mean_fscore": mean_fscore}])
-mean_df.to_csv(os.path.join(csv_results_dir, mean_results_filename), index=False)
-
-print(f"Completed. F-Score results and mean are saved in the CSV files: {results_filename} and {mean_results_filename}.")
+print(f"Completed. F-Score results, including the mean, are saved in the CSV file: {results_filename}.")
