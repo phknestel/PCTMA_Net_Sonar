@@ -44,3 +44,4 @@ data/Data_elevation-test/*
 !data/Data_elevation-test/find_del_empty_or_zero.py
 !data/Data_elevation-test/write_list.py
 !data/Data_elevation-test/synsetoffset2category.txt
+!evaluation_files/
