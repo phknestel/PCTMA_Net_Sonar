@@ -1,0 +1,3 @@
+03/11/2024 03:18:43 PM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ---> use_cd: True, use_emd: True, combined_pc: True, ppd_loss: False, down_sampling: False, use_consistence: False, n_primitives: 32, use_atlas: True, gen_file: True
+03/11/2024 03:19:21 PM - All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: 166.4805, average loss: 166.4805, total_elapsed_time: 25.18 seconds, num_samples: 1446, mean_time_per_sample: 0.02 seconds
+03/11/2024 03:19:21 PM - ====> cd_dense: ground: 166.4805, average loss: 166.4805, total_elapsed_time: 25.18 seconds, num_samples: 1446, mean_time_per_sample: 0.02 seconds

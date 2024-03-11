@@ -289,6 +289,9 @@ class PCTMA_Net(nn.Module):
         evaluate_class_choice_sparse = {"ground": []}
         evaluate_class_choice_dense = {"ground": []}
         count = 0.0
+        total_elapsed_time = 0.0  # Initialize total elapsed time
+        num_samples = len(test_loader.dataset)  # Get the total number of samples in the test set
+
         if self.parameter["gene_file"]:
             save_ply_path = os.path.join(os.path.dirname(__file__), "../../Finished_models_gen_files/alldataset_noPretrain_noHyper_noDenoise")
             make_dirs(save_ply_path)
@@ -308,6 +311,7 @@ class PCTMA_Net(nn.Module):
                 start_time = time.time()  # Start measuring time
                 out_px3, out_px2, out_px1, _ = self(partial_point_cloud)
                 elapsed_time = time.time() - start_time  # Calculate elapsed time
+                total_elapsed_time += elapsed_time  # Accumulate total elapsed time
 
                 if self.parameter["combined_pc"]:
                     pc_point_completion_dense = torch.cat([partial_point_cloud, out_px1], dim=1)
@@ -350,26 +354,29 @@ class PCTMA_Net(nn.Module):
             if item:
                 evaluate_class_choice_dense[key] = sum(item) / len(item)
 
-        # Correct usage of logging with string formatting
-        formatted_message_sparse = 'All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: %.4f, average loss: %.4f' % (
+        mean_time_per_sample = total_elapsed_time / num_samples  # Calculate mean time per sample
+
+
+        formatted_message_sparse = 'All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: %.4f, average loss: %.4f, total_elapsed_time: %.2f seconds, num_samples: %d, mean_time_per_sample: %.2f seconds' % (
             evaluate_class_choice_sparse["ground"] * 10000,
             sum(evaluate_loss_sparse) / len(evaluate_loss_sparse) * 10000,
-            elapsed_time
+            total_elapsed_time,
+            num_samples,
+            mean_time_per_sample
         )
         self.Logger.INFO(formatted_message_sparse)
 
-        formatted_message_dense = '====> cd_dense: ground: %.4f, average loss: %.4f' % (
+        formatted_message_dense = '====> cd_dense: ground: %.4f, average loss: %.4f, total_elapsed_time: %.2f seconds, num_samples: %d, mean_time_per_sample: %.2f seconds' % (
             evaluate_class_choice_dense["ground"] * 10000,
             sum(evaluate_loss_dense) / len(evaluate_loss_dense) * 10000,
-            elapsed_time
+            total_elapsed_time,
+            num_samples,
+            mean_time_per_sample
         )
         self.Logger.INFO(formatted_message_dense)
 
-
-
-
         return sum(evaluate_loss_sparse) / len(evaluate_loss_sparse), sum(evaluate_loss_dense) / len(
-            evaluate_loss_dense), elapsed_time
+            evaluate_loss_dense)
     #'''
 
     '''
