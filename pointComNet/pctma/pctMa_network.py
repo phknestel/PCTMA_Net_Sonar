@@ -281,7 +281,7 @@ class PCTMA_Net(nn.Module):
                 self.save_checkpoint(state=state, best_model_name=best_model_name)
     #'''
     # for elevation net
-
+    
     def evaluation_step(self, test_loader, check_point_name=None):
         # self.count_parameters()
         evaluate_loss_sparse = []
@@ -305,7 +305,9 @@ class PCTMA_Net(nn.Module):
             with torch.no_grad():
                 self.eval()
 
+                start_time = time.time()  # Start measuring time
                 out_px3, out_px2, out_px1, _ = self(partial_point_cloud)
+                elapsed_time = time.time() - start_time  # Calculate elapsed time
 
                 if self.parameter["combined_pc"]:
                     pc_point_completion_dense = torch.cat([partial_point_cloud, out_px1], dim=1)
@@ -351,13 +353,15 @@ class PCTMA_Net(nn.Module):
         # Correct usage of logging with string formatting
         formatted_message_sparse = 'All_datasets, No_Pre_train, No_Hyperparameter, No_Denoise ====> cd_sparse: ground: %.4f, average loss: %.4f' % (
             evaluate_class_choice_sparse["ground"] * 10000,
-            sum(evaluate_loss_sparse) / len(evaluate_loss_sparse) * 10000
+            sum(evaluate_loss_sparse) / len(evaluate_loss_sparse) * 10000,
+            elapsed_time
         )
         self.Logger.INFO(formatted_message_sparse)
 
         formatted_message_dense = '====> cd_dense: ground: %.4f, average loss: %.4f' % (
             evaluate_class_choice_dense["ground"] * 10000,
-            sum(evaluate_loss_dense) / len(evaluate_loss_dense) * 10000
+            sum(evaluate_loss_dense) / len(evaluate_loss_dense) * 10000,
+            elapsed_time
         )
         self.Logger.INFO(formatted_message_dense)
 
@@ -365,7 +369,7 @@ class PCTMA_Net(nn.Module):
 
 
         return sum(evaluate_loss_sparse) / len(evaluate_loss_sparse), sum(evaluate_loss_dense) / len(
-            evaluate_loss_dense)
+            evaluate_loss_dense), elapsed_time
     #'''
 
     '''
