@@ -5,7 +5,7 @@ import open3d as o3d
 from scipy.spatial import cKDTree as KDTree
 
 # Parameters
-output_dir = "alldataset_noPretrain_noHyper_noDenoise_delInput"
+output_dir = "alldataset_NoPretrain_Hyper_Denoise_delInput"
 csv_results_dir = "csv_results/"
 results = []
 
@@ -54,8 +54,12 @@ for base_name in os.listdir(output_dir):
 df = pd.DataFrame(results)
 mean_hausdorff_dist = df["Hausdorff_Distance"].mean()
 
-# Append mean to the DataFrame
-df = df.append({"base_name": "mean_hausdorff_distance", "Hausdorff_Distance": mean_hausdorff_dist}, ignore_index=True)
+# Append mean to the DataFrame using concat
+mean_df = pd.DataFrame([{
+    "base_name": "mean_hausdorff_distance",
+    "Hausdorff_Distance": mean_hausdorff_dist
+}])
+df = pd.concat([df, mean_df], ignore_index=True)
 
 # Save the DataFrame with Hausdorff distances to a CSV file
 results_filename = f"point_cloud_hausdorff_distance_results_{output_dir}.csv"

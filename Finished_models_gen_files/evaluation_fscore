@@ -5,7 +5,7 @@ import open3d as o3d
 from scipy.spatial import KDTree
 
 # Parameters
-output_dir = "denoise_hyper_floor_delInput"
+output_dir = "alldataset_NoPretrain_Hyper_Denoise_delInput"
 csv_results_dir = "csv_results/"
 distance_threshold = 0.02  # Assuming meters, equivalent to 20 mm
 results = []
@@ -22,7 +22,6 @@ def compute_precision_recall_fscore(gt_points, completed_points, threshold):
     # Query for closest points to compute recall
     distances, _ = gt_tree.query(completed_points, k=1)
     recall = np.mean(distances <= threshold)
-
     
     # Compute F-Score
     if precision + recall > 0:
@@ -65,8 +64,14 @@ mean_precision = df["Precision"].mean()
 mean_recall = df["Recall"].mean()
 mean_fscore = df["Fscore"].mean()
 
-# Append means to the DataFrame
-df = df.append({"base_name": "mean_metrics", "Precision": mean_precision, "Recall": mean_recall, "Fscore": mean_fscore}, ignore_index=True)
+# Append means to the DataFrame using concat
+means_df = pd.DataFrame([{
+    "base_name": "mean_metrics",
+    "Precision": mean_precision,
+    "Recall": mean_recall,
+    "Fscore": mean_fscore
+}])
+df = pd.concat([df, means_df], ignore_index=True)
 
 # Save the DataFrame with metrics to a CSV file
 results_filename = f"point_cloud_fscore_results_{output_dir}.csv"

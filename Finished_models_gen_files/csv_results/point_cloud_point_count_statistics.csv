@@ -1,0 +1,10 @@
+Dataset,Avg_GT_Point_Count,Min_GT_Point_Count,Max_GT_Point_Count,Avg_Reconstructed_Point_Count,Min_Reconstructed_Point_Count,Max_Reconstructed_Point_Count
+alldataset_NoPretrain_Hyper_Denoise_delInput,2048.0,2048,2048,8112.0,8112,8112
+alldataset_noPretrain_noHyper_noDenoise_delInput,2048.0,2048,2048,8192.0,8192,8192
+alldataset_Pretrain_Hyper_Denoise_delInput,2048.0,2048,2048,8112.0,8112,8112
+alldataset_Pretrain_noHyper_Denoise_delInput,2048.0,2048,2048,8192.0,8192,8192
+denoise_hyper_floor_delInput,2048.0,2048,2048,8112.0,8112,8112
+denoise_hyper_nofloor_delInput,2048.0,2048,2048,8112.0,8112,8112
+denoise_pretrain_hyper_floor_delInput,2048.0,2048,2048,8112.0,8112,8112
+denoise_pretrain_hyper_nofloor_delInput,2048.0,2048,2048,8112.0,8112,8112
+Overall,2048.0,2048,2048,8132.0,8112,8192

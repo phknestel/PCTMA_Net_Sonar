@@ -5,11 +5,12 @@ import open3d as o3d
 from scipy.spatial import cKDTree as KDTree
 
 # Parameters
+#output_dir = "alldataset_noPretrain_noHyper_noDenoise_delInput"
 output_dir = "alldataset_Pretrain_noHyper_Denoise_delInput"
 csv_results_dir = "csv_density_resultsx100/"
 results = []
 
-def compute_density_metric(points, k=100):
+def compute_median_distance_metric(points, k=100):
     # Build a KD-tree for the points
     tree = KDTree(points)
     
@@ -17,11 +18,10 @@ def compute_density_metric(points, k=100):
     distances, _ = tree.query(points, k=k+1)
     
     # The first column returns zero distance (point to itself), so use the remaining columns
-    avg_distance = np.mean(distances[:, 1:])
+    median_distances = np.median(distances[:, 1:], axis=1)
     
-    # Using average distance between points as a proxy for density
-    # Lower average distance indicates higher density
-    return avg_distance
+    # Using median distance between points as a proxy for density
+    return np.median(median_distances)
 
 # Ensure the CSV results directory exists
 os.makedirs(csv_results_dir, exist_ok=True)
@@ -42,32 +42,32 @@ for base_name in os.listdir(output_dir):
         gt_points = np.asarray(gt_cloud.points)
         completed_points = np.asarray(completed_cloud.points)
 
-        # Compute Density Metrics
-        gt_density_metric = compute_density_metric(gt_points, k=100)
-        completed_density_metric = compute_density_metric(completed_points, k=100)
+        # Compute Median Distance Metrics
+        gt_median_distance_metric = compute_median_distance_metric(gt_points)
+        completed_median_distance_metric = compute_median_distance_metric(completed_points)
         
         # Store the results
         results.append({
             "base_name": base_name,
-            "GT_Density_Metric": gt_density_metric,
-            "Completed_Density_Metric": completed_density_metric
+            "GT_Median_Distance_Metric": gt_median_distance_metric,
+            "Completed_Median_Distance_Metric": completed_median_distance_metric
         })
 
-# Convert results to a DataFrame and calculate means
+# Convert results to a DataFrame and calculate medians
 df = pd.DataFrame(results)
-mean_gt_density = df["GT_Density_Metric"].mean()
-mean_completed_density = df["Completed_Density_Metric"].mean()
+median_gt_median_distance = df["GT_Median_Distance_Metric"].mean()
+median_completed_median_distance = df["Completed_Median_Distance_Metric"].mean()
 
-# Append means to the DataFrame using concat
-mean_df = pd.DataFrame([{
-    "base_name": "mean_density_metric",
-    "GT_Density_Metric": mean_gt_density,
-    "Completed_Density_Metric": mean_completed_density
+# Append medians to the DataFrame using concat
+medians_df = pd.DataFrame([{
+    "base_name": "median_distance_metric",
+    "GT_Median_Distance_Metric": median_gt_median_distance,
+    "Completed_Median_Distance_Metric": median_completed_median_distance
 }])
-df = pd.concat([df, mean_df], ignore_index=True)
+df = pd.concat([df, medians_df], ignore_index=True)
 
-# Save the DataFrame with density metrics to a CSV file
-results_filename = f"point_cloud_density_metrics_results_{output_dir}.csv"
+# Save the DataFrame with median distance metrics to a CSV file
+results_filename = f"point_cloud_median_distance_metrics_results_{output_dir}.csv"
 df.to_csv(os.path.join(csv_results_dir, results_filename), index=False)
 
-print(f"Completed. Density metric results, including the means, are saved in the CSV file: {results_filename}.")
+print(f"Completed. Median distance metric results, including the overall medians, are saved in the CSV file: {results_filename}.")
